@@ -41,22 +41,21 @@ Thing simatic:generic_device:SIC-AS01-L20 "L20 - Büro" (simatic:bridge:SIC-AS01
 
     }
 
-/*
+Thing simatic:generic_device:SIC-AS01-Lxx "L30, L40, K10 - Abluft, Trafo, kühlturm" (simatic:bridge:SIC-AS01) {
+        Channels:
+			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", unit="°C" ]    
+			Type chSwitch: L30FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.2", commandAddress="DB5.DBX98.2" ]
 
-EW028 - L20 TSu	Real	46.0
+			Type chNumber: L40Temp "Temperatur" [ stateAddress="DB5.DBD54F", unit="°C" ]    
+			Type chSwitch: L40FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.5", commandAddress="DB5.DBX98.5" ]
 
-E023.1 - L20 FanEx Dstb	Bool	96.3
-E023.3 - L20 FanEx DPMon	Bool	96.4
-E023.2 - L20 FanEx MntnSwi	Bool	96.5
+			Type chNumber: K10WTemp "Wassertemperatur" [ stateAddress="DB5.DBD58F", unit="°C" ]
+			Type chSwitch: K10PuMotSchutz "Pu - Motorschutz" [ stateAddress="DB5.DBX99.0", commandAddress="DB5.DBX99.0" ]			
+			Type chSwitch: K10PuMntnSwi "Pu - Wartungschalter" [ stateAddress="DB5.DBX99.1", commandAddress="DB5.DBX99.1" ]
+			Type chSwitch: K10PuMWDet "Pu - Trockenlaufschutz" [ stateAddress="DB5.DBX99.2", commandAddress="DB5.DBX99.2" ]
+			Type chSwitch: K10FanMotSchutz "Fan - Motorschutz" [ stateAddress="DB5.DBX99.5", commandAddress="DB5.DBX99.5" ]
+            Type chSwitch: K10FanLaufUe "Fan - Laufüberwachung" [ stateAddress="DB5.DBX96.4", commandAddress="DB5.DBX99.6" ]
+			Type chSwitch: K10FanMntnSwi "Fan - Wartungschalter"  [ stateAddress="DB5.DBX99.7", commandAddress="DB5.DBX99.7" ]
 
-E022.3 - L20 HCL Frost	Bool	97.0
-E022.1 - L20 HCL Pu Dstb	Bool	97.1
-E022.2 - L20 HCL Pu MntnSwi	Bool	97.2
+    }
 
-E022.5 - L20 FanSu Dstb	Bool	97.5
-E022.7 - L20 FanSu DPMon	Bool	97.6
-E022.6 - L20 FanSu MntnSwi	Bool	97.7
-
-
-
-*/

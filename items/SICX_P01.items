@@ -1,0 +1,7 @@
+// Gruppen
+Group P01_SICX_io "SICX - Platz 01" <sicx> (sicx_io)	
+
+//IO Adressen für SICX
+// Anlage L10
+Group P01_SICX_L10 "Anlage L10" <8u> (P01_SICX_io)
+Number	P01_L10TOa	"L10 Aussentemperatur [%.1f °C]"	<temperature> (P01_SICX_L10)	{ channel="imatic:generic_device:SIC-AS01-L10:L10TOa" }
