@@ -740,8 +740,340 @@ sitemap ACADEMY label="Academy 4.0"{
 			}
 		}
 	
-	}
-	}
+	Group item=P02_sicx_io {
+		Group item=P02_sicx_L10{
+			Text item=P02_L10TOa 
+			Slider item=P02_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P02_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_L10Tex minValue=-30 maxValue=130 step=5.0
 
+			Switch	item=P02_L10FanSuMotSchutz
+			Switch	item=P02_L10FanSuLaufUe
+			Switch	item=P02_L10FanSuMntnSwi
+			Switch	item=P02_L10FanSuFern
+
+			Switch	item=P02_L10FanExMotSchutz
+			Switch	item=P02_L10FanExLaufUe
+			Switch	item=P02_L10FanExMntnSwi
+			Switch	item=P02_L10FanExFern
+
+			Switch	item=P02_L10HclFrost
+			Switch	item=P02_L10HclPuMotSchutz
+			Switch	item=P02_L10HclPuMntnSwi
+
+			Switch	item=P02_L10Filter1
+			Switch	item=P02_L10Filter2
+
+			}
+		Group item=P02_sicx_L20{
+			Slider item=P02_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P02_L20FanSuMotSchutz
+			Switch	item=P02_L20FanSuLaufUe
+			Switch	item=P02_L20FanSuMntnSwi
+
+			Switch	item=P02_L20FanExMotSchutz
+			Switch	item=P02_L20FanExLaufUe
+			Switch	item=P02_L20FanExMntnSwi
+
+			Switch	item=P02_L20HclFrost
+			Switch	item=P02_L20HclPuMotSchutz
+			Switch	item=P02_L20HclPuMntnSwi
+			}
+
+		Group item=P02_sicx_L30{
+			Slider item=P02_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P02_L30FanExMotSchutz
+			}
+
+		Group item=P02_sicx_L40{
+			Slider item=P02_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P02_L40FanExMotSchutz
+			}
+
+		Group item=P02_sicx_K10{
+			Slider item=P02_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P02_K10PuMotSchutz
+			Switch	item=P02_K10PuMntnSwi
+			Switch	item=P02_K10PuMWDet
+
+			Switch	item=P02_K10FanMotSchutz
+			Switch	item=P02_K10FanLaufUe
+			Switch	item=P02_K10FanMntnSwi
+
+			}
+		}
+	
+	Group item=P04_sicx_io {
+		Group item=P04_sicx_L10{
+			Text item=P04_L10TOa 
+			Slider item=P04_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P04_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_L10Tex minValue=-30 maxValue=130 step=5.0
+
+			Switch	item=P04_L10FanSuMotSchutz
+			Switch	item=P04_L10FanSuLaufUe
+			Switch	item=P04_L10FanSuMntnSwi
+			Switch	item=P04_L10FanSuFern
+
+			Switch	item=P04_L10FanExMotSchutz
+			Switch	item=P04_L10FanExLaufUe
+			Switch	item=P04_L10FanExMntnSwi
+			Switch	item=P04_L10FanExFern
+
+			Switch	item=P04_L10HclFrost
+			Switch	item=P04_L10HclPuMotSchutz
+			Switch	item=P04_L10HclPuMntnSwi
+
+			Switch	item=P04_L10Filter1
+			Switch	item=P04_L10Filter2
+
+			}
+		Group item=P04_sicx_L20{
+			Slider item=P04_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P04_L20FanSuMotSchutz
+			Switch	item=P04_L20FanSuLaufUe
+			Switch	item=P04_L20FanSuMntnSwi
+
+			Switch	item=P04_L20FanExMotSchutz
+			Switch	item=P04_L20FanExLaufUe
+			Switch	item=P04_L20FanExMntnSwi
+
+			Switch	item=P04_L20HclFrost
+			Switch	item=P04_L20HclPuMotSchutz
+			Switch	item=P04_L20HclPuMntnSwi
+			}
+
+		Group item=P04_sicx_L30{
+			Slider item=P04_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P04_L30FanExMotSchutz
+			}
+
+		Group item=P04_sicx_L40{
+			Slider item=P04_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P04_L40FanExMotSchutz
+			}
+
+		Group item=P04_sicx_K10{
+			Slider item=P04_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P04_K10PuMotSchutz
+			Switch	item=P04_K10PuMntnSwi
+			Switch	item=P04_K10PuMWDet
+
+			Switch	item=P04_K10FanMotSchutz
+			Switch	item=P04_K10FanLaufUe
+			Switch	item=P04_K10FanMntnSwi
+
+			}
+		}
+
+	Group item=P06_sicx_io {
+		Group item=P06_sicx_L10{
+			Text item=P06_L10TOa 
+			Slider item=P06_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P06_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_L10Tex minValue=-30 maxValue=130 step=5.0
+
+			Switch	item=P06_L10FanSuMotSchutz
+			Switch	item=P06_L10FanSuLaufUe
+			Switch	item=P06_L10FanSuMntnSwi
+			Switch	item=P06_L10FanSuFern
+
+			Switch	item=P06_L10FanExMotSchutz
+			Switch	item=P06_L10FanExLaufUe
+			Switch	item=P06_L10FanExMntnSwi
+			Switch	item=P06_L10FanExFern
+
+			Switch	item=P06_L10HclFrost
+			Switch	item=P06_L10HclPuMotSchutz
+			Switch	item=P06_L10HclPuMntnSwi
+
+			Switch	item=P06_L10Filter1
+			Switch	item=P06_L10Filter2
+
+			}
+		Group item=P06_sicx_L20{
+			Slider item=P06_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P06_L20FanSuMotSchutz
+			Switch	item=P06_L20FanSuLaufUe
+			Switch	item=P06_L20FanSuMntnSwi
+
+			Switch	item=P06_L20FanExMotSchutz
+			Switch	item=P06_L20FanExLaufUe
+			Switch	item=P06_L20FanExMntnSwi
+
+			Switch	item=P06_L20HclFrost
+			Switch	item=P06_L20HclPuMotSchutz
+			Switch	item=P06_L20HclPuMntnSwi
+			}
+
+		Group item=P06_sicx_L30{
+			Slider item=P06_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P06_L30FanExMotSchutz
+			}
+
+		Group item=P06_sicx_L40{
+			Slider item=P06_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P06_L40FanExMotSchutz
+			}
+
+		Group item=P06_sicx_K10{
+			Slider item=P06_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P06_K10PuMotSchutz
+			Switch	item=P06_K10PuMntnSwi
+			Switch	item=P06_K10PuMWDet
+
+			Switch	item=P06_K10FanMotSchutz
+			Switch	item=P06_K10FanLaufUe
+			Switch	item=P06_K10FanMntnSwi
+
+			}
+		}
+
+	Group item=P08_sicx_io {
+		Group item=P08_sicx_L10{
+			Text item=P08_L10TOa 
+			Slider item=P08_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P08_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_L10Tex minValue=-30 maxValue=130 step=5.0
+
+			Switch	item=P08_L10FanSuMotSchutz
+			Switch	item=P08_L10FanSuLaufUe
+			Switch	item=P08_L10FanSuMntnSwi
+			Switch	item=P08_L10FanSuFern
+
+			Switch	item=P08_L10FanExMotSchutz
+			Switch	item=P08_L10FanExLaufUe
+			Switch	item=P08_L10FanExMntnSwi
+			Switch	item=P08_L10FanExFern
+
+			Switch	item=P08_L10HclFrost
+			Switch	item=P08_L10HclPuMotSchutz
+			Switch	item=P08_L10HclPuMntnSwi
+
+			Switch	item=P08_L10Filter1
+			Switch	item=P08_L10Filter2
+
+			}
+		Group item=P08_sicx_L20{
+			Slider item=P08_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P08_L20FanSuMotSchutz
+			Switch	item=P08_L20FanSuLaufUe
+			Switch	item=P08_L20FanSuMntnSwi
+
+			Switch	item=P08_L20FanExMotSchutz
+			Switch	item=P08_L20FanExLaufUe
+			Switch	item=P08_L20FanExMntnSwi
+
+			Switch	item=P08_L20HclFrost
+			Switch	item=P08_L20HclPuMotSchutz
+			Switch	item=P08_L20HclPuMntnSwi
+			}
+
+		Group item=P08_sicx_L30{
+			Slider item=P08_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P08_L30FanExMotSchutz
+			}
+
+		Group item=P08_sicx_L40{
+			Slider item=P08_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P08_L40FanExMotSchutz
+			}
+
+		Group item=P08_sicx_K10{
+			Slider item=P08_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P08_K10PuMotSchutz
+			Switch	item=P08_K10PuMntnSwi
+			Switch	item=P08_K10PuMWDet
+
+			Switch	item=P08_K10FanMotSchutz
+			Switch	item=P08_K10FanLaufUe
+			Switch	item=P08_K10FanMntnSwi
+
+			}
+		}
+	
+	Group item=P10_sicx_io {
+		Group item=P10_sicx_L10{
+			Text item=P10_L10TOa 
+			Slider item=P10_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P10_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P10_L10Tex minValue=-30 maxValue=130 step=5.0
+
+			Switch	item=P10_L10FanSuMotSchutz
+			Switch	item=P10_L10FanSuLaufUe
+			Switch	item=P10_L10FanSuMntnSwi
+			Switch	item=P10_L10FanSuFern
+
+			Switch	item=P10_L10FanExMotSchutz
+			Switch	item=P10_L10FanExLaufUe
+			Switch	item=P10_L10FanExMntnSwi
+			Switch	item=P10_L10FanExFern
+
+			Switch	item=P10_L10HclFrost
+			Switch	item=P10_L10HclPuMotSchutz
+			Switch	item=P10_L10HclPuMntnSwi
+
+			Switch	item=P10_L10Filter1
+			Switch	item=P10_L10Filter2
+
+			}
+		Group item=P10_sicx_L20{
+			Slider item=P10_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P10_L20FanSuMotSchutz
+			Switch	item=P10_L20FanSuLaufUe
+			Switch	item=P10_L20FanSuMntnSwi
+
+			Switch	item=P10_L20FanExMotSchutz
+			Switch	item=P10_L20FanExLaufUe
+			Switch	item=P10_L20FanExMntnSwi
+
+			Switch	item=P10_L20HclFrost
+			Switch	item=P10_L20HclPuMotSchutz
+			Switch	item=P10_L20HclPuMntnSwi
+			}
+
+		Group item=P10_sicx_L30{
+			Slider item=P10_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P10_L30FanExMotSchutz
+			}
+
+		Group item=P10_sicx_L40{
+			Slider item=P10_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P10_L40FanExMotSchutz
+			}
+
+		Group item=P10_sicx_K10{
+			Slider item=P10_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P10_K10PuMotSchutz
+			Switch	item=P10_K10PuMntnSwi
+			Switch	item=P10_K10PuMWDet
+
+			Switch	item=P10_K10FanMotSchutz
+			Switch	item=P10_K10FanLaufUe
+			Switch	item=P10_K10FanMntnSwi
+
+			}
+		}
+	}
+	}
 }
-  
