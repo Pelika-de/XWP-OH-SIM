@@ -1,7 +1,64 @@
 // Gruppen
-Group P01_SICX_io "SICX - Platz 01" <sicx> (sicx_io)	
+Group P01_sicx_io "SICX - Platz 01" <sicx> (sicx_io)	
 
 //IO Adressen für SICX
 // Anlage L10
-Group P01_SICX_L10 "Anlage L10" <8u> (P01_SICX_io)
-Number	P01_L10TOa	"L10 Aussentemperatur [%.1f °C]"	<temperature> (P01_SICX_L10)	{ channel="imatic:generic_device:SIC-AS01-L10:L10TOa" }
+Group P01_sicx_L10 "Anlage L10" <8u> (P01_sicx_io)
+Number	P01_L10TOa	"L10 Aussentemperatur [%.1f °C]"	<temperature> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10TOa" }
+Number	P01_L10HclTrt	"L10 Erhitzer Rücklauf [%.1f °C]"	<temperature> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10HclTrt" }
+Number	P01_L10TSu	"L10 zulufttemperatur [%.1f °C]"	<temperature> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10TSu" }
+Number	P01_L10Tex	"L10 Ablufttemperatur [%.1f °C]"	<temperature> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10Tex" }
+
+Switch	P01_L10FanSuMotSchutz	"L10 Zuluft Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanSuMotSchutz" }
+Switch	P01_L10FanSuLaufUe	"L10 Zuluft Laufüberwachung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanSuLaufUe" }
+Switch	P01_L10FanSuMntnSwi	"L10 Zuluft Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanSuMntnSwi" }
+Switch	P01_L10FanSuFern	"L10 Zuluft Extern [MAP(AUS_EIN.map):%s]" <switch> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanSuFern" }
+
+Switch	P01_L10FanExMotSchutz	"L10 Abluft Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanExMotSchutz" }
+Switch	P01_L10FanExLaufUe	"L10 Abluft Laufüberwachung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanExLaufUe" }
+Switch	P01_L10FanExMntnSwi	"L10 Abluft Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanExMntnSwi" }
+Switch	P01_L10FanExFern	"L10 Abluft Extern [MAP(AUS_EIN.map):%s]" <switch> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10FanExFern" }
+
+Switch	P01_L10HclFrost	"L10 Frostschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10HclFrost" }
+Switch	P01_L10HclPuMotSchutz	"L10 Erhitzerpumpe Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10HclPuMotSchutz" }
+Switch	P01_L10HclPuMntnSwi	"L10 Erhitzerpumpe Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10HclPuMntnSwi" }
+
+Switch	P01_L10Filter1	"L10 Filter 1 [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10Filter1" }
+Switch	P01_L10Filter2	"L10 Filter 2 [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L10)	{ channel="simatic:generic_device:SIC-AS01-L10:L10Filter2" }
+
+
+// Anlage L20
+Group P01_sicx_L20 "Anlage L20" <8u> (P01_sicx_io)
+Number	P01_L20TSu	"L20 zulufttemperatur [%.1f °C]"	<temperature> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20TSu" }
+
+Switch	P01_L20FanSuMotSchutz	"L20 Zuluft Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanSuMotSchutz" }
+Switch	P01_L20FanSuLaufUe	"L20 Zuluft Laufüberwachung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanSuLaufUe" }
+Switch	P01_L20FanSuMntnSwi	"L20 Zuluft Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanSuMntnSwi" }
+
+Switch	P01_L20FanExMotSchutz	"L20 Abluft Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanExMotSchutz" }
+Switch	P01_L20FanExLaufUe	"L20 Abluft Laufüberwachung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanExLaufUe" }
+Switch	P01_L20FanExMntnSwi	"L20 Abluft Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20FanExMntnSwi" }
+
+Switch	P01_L20HclFrost	"L20 Frostschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20HclFrost" }
+Switch	P01_L20HclPuMotSchutz	"L20 Erhitzerpumpe Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20HclPuMotSchutz" }
+Switch	P01_L20HclPuMntnSwi	"L20 Erhitzerpumpe Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L20)	{ channel="simatic:generic_device:SIC-AS01-L20:L20HclPuMntnSwi" }
+
+// Anlage L30
+Group P01_sicx_L30 "Anlage L30" <8u> (P01_sicx_io)
+Number	P01_L30TSu	"L30 Temperatur [%.1f °C]"	<temperature> (P01_sicx_L30)	{ channel="simatic:generic_device:SIC-AS01-Lxx:L30TSu" }
+Switch	P01_L30FanExMotSchutz	"L30 Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L30)	{ channel="simatic:generic_device:SIC-AS01-Lxx:L30FanExMotSchutz" }
+
+// Anlage L40
+Group P01_sicx_L40 "Anlage L40" <8u> (P01_sicx_io)
+Number	P01_L40Temp	"L40 Temperatur [%.1f °C]"	<temperature> (P01_sicx_L40)	{ channel="simatic:generic_device:SIC-AS01-Lxx:L40Temp" }
+Switch	P01_L40FanExMotSchutz	"L40 Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_L40)	{ channel="simatic:generic_device:SIC-AS01-Lxx:L40FanExMotSchutz" }
+
+// Anlage K10
+Group P01_sicx_K10 "Anlage K10" <8u> (P01_sicx_io)
+Number	P01_K10WTemp	"K10 Temperatur [%.1f °C]"	<temperature> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10WTemp" }
+Switch	P01_K10PuMotSchutz	"K10 Pumpe Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10PuMotSchutz" }
+Switch	P01_K10PuMntnSwi	"K10 Pumpe Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10PuMntnSwi" }
+Switch	P01_K10PuMWDet	"K10 Pumpe Trockenlauf [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10PuMWDet" }
+Switch	P01_K10FanMotSchutz	"K10 Ventilator Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10FanMotSchutz" }
+Switch	P01_K10FanLaufUe	"K10 Ventilator Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10FanLaufUe" }
+Switch	P01_K10FanMntnSwi	"K10 Ventilator Trockenlauf [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_sicx_K10)	{ channel="simatic:generic_device:SIC-AS01-Lxx:K10FanMntnSwi" }
