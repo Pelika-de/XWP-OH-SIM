@@ -1,9 +1,9 @@
 Thing simatic:generic_device:SIC-AS01-L10 "L10 - Büro" (simatic:bridge:SIC-AS01) {
         Channels:
 			Type chNumber: L10TOa "Aussentemperatur" [ stateAddress="DB5.DBD2F", unit="°C" ]    		
-			Type chNumber: L10HclTrt "Hcl - Rücklauftemoeratur" [ stateAddress="DB5.DBD6F", unit="°C" ]    		
-			Type chNumber: L10TSu "Zulufttemperatur" [ stateAddress="DB5.DBD30F", unit="°C" ]    
-			Type chNumber: L10Tex "Ablufttemperatur" [ stateAddress="DB5.DBD34F", unit="°C" ]    
+			Type chNumber: L10HclTrt "Hcl - Rücklauftemperatur" [ stateAddress="DB5.DBD6F", commandAddress="DB5.DBD6F", unit="°C" ]    		
+			Type chNumber: L10TSu "Zulufttemperatur" [ stateAddress="DB5.DBD30F", commandAddress="DB5.DBD30F", unit="°C" ]    
+			Type chNumber: L10Tex "Ablufttemperatur" [ stateAddress="DB5.DBD34F", commandAddress="DB5.DBD34F", unit="°C" ]    
 			
 			Type chSwitch: L10FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX94.0", commandAddress="DB5.DBX94.0" ]
             Type chSwitch: L10FanExLaufUe "FanEx - Laufüberwachung" [ stateAddress="DB5.DBX94.1", commandAddress="DB5.DBX94.1" ]
@@ -25,7 +25,7 @@ Thing simatic:generic_device:SIC-AS01-L10 "L10 - Büro" (simatic:bridge:SIC-AS01
 	
 Thing simatic:generic_device:SIC-AS01-L20 "L20 - Büro" (simatic:bridge:SIC-AS01) {
         Channels:
-			Type chNumber: L20TSu "Zulufttemperatur" [ stateAddress="DB5.DBD46F", unit="°C" ]    
+			Type chNumber: L20TSu "Zulufttemperatur" [ stateAddress="DB5.DBD46F", commandAddress="DB5.DBD46F", unit="°C" ]    
 			
 			Type chSwitch: L20FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX96.3", commandAddress="DB5.DBX96.3" ]
             Type chSwitch: L20FanExLaufUe "FanEx - Laufüberwachung" [ stateAddress="DB5.DBX96.4", commandAddress="DB5.DBX96.4" ]
@@ -43,13 +43,13 @@ Thing simatic:generic_device:SIC-AS01-L20 "L20 - Büro" (simatic:bridge:SIC-AS01
 
 Thing simatic:generic_device:SIC-AS01-Lxx "L30, L40, K10 - Abluft, Trafo, kühlturm" (simatic:bridge:SIC-AS01) {
         Channels:
-			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", unit="°C" ]    
+			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", commandAddress="DB5.DBD50F", unit="°C" ]    
 			Type chSwitch: L30FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.2", commandAddress="DB5.DBX98.2" ]
 
-			Type chNumber: L40Temp "Temperatur" [ stateAddress="DB5.DBD54F", unit="°C" ]    
+			Type chNumber: L40Temp "Temperatur" [ stateAddress="DB5.DBD54F", commandAddress="DB5.DBD54F", unit="°C" ]    
 			Type chSwitch: L40FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.5", commandAddress="DB5.DBX98.5" ]
 
-			Type chNumber: K10WTemp "Wassertemperatur" [ stateAddress="DB5.DBD58F", unit="°C" ]
+			Type chNumber: K10WTemp "Wassertemperatur" [ stateAddress="DB5.DBD58F", commandAddress="DB5.DBD58F", unit="°C" ]
 			Type chSwitch: K10PuMotSchutz "Pu - Motorschutz" [ stateAddress="DB5.DBX99.0", commandAddress="DB5.DBX99.0" ]			
 			Type chSwitch: K10PuMntnSwi "Pu - Wartungschalter" [ stateAddress="DB5.DBX99.1", commandAddress="DB5.DBX99.1" ]
 			Type chSwitch: K10PuMWDet "Pu - Trockenlaufschutz" [ stateAddress="DB5.DBX99.2", commandAddress="DB5.DBX99.2" ]

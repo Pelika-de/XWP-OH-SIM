@@ -671,5 +671,77 @@ sitemap ACADEMY label="Academy 4.0"{
 */	}
 	}
 
+	Frame label="Siclimat" {
+	Group item=sicx_io {
+	Group item=P01_sicx_io {
+		Group item=P01_sicx_L10{
+			Text item=P01_L10TOa 
+			Slider item=P01_L10HclTrt minValue=-30 maxValue=130 step=5.0
+			Slider item=P01_L10TSu minValue=-30 maxValue=130 step=0.5
+			Slider item=P01_L10Tex minValue=-30 maxValue=130 step=5.0
+
+			Switch	item=P01_L10FanSuMotSchutz
+			Switch	item=P01_L10FanSuLaufUe
+			Switch	item=P01_L10FanSuMntnSwi
+			Switch	item=P01_L10FanSuFern
+
+			Switch	item=P01_L10FanExMotSchutz
+			Switch	item=P01_L10FanExLaufUe
+			Switch	item=P01_L10FanExMntnSwi
+			Switch	item=P01_L10FanExFern
+
+			Switch	item=P01_L10HclFrost
+			Switch	item=P01_L10HclPuMotSchutz
+			Switch	item=P01_L10HclPuMntnSwi
+
+			Switch	item=P01_L10Filter1
+			Switch	item=P01_L10Filter2
+
+			}
+		Group item=P01_sicx_L20{
+			Slider item=P01_L20TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P01_L20FanSuMotSchutz
+			Switch	item=P01_L20FanSuLaufUe
+			Switch	item=P01_L20FanSuMntnSwi
+
+			Switch	item=P01_L20FanExMotSchutz
+			Switch	item=P01_L20FanExLaufUe
+			Switch	item=P01_L20FanExMntnSwi
+
+			Switch	item=P01_L20HclFrost
+			Switch	item=P01_L20HclPuMotSchutz
+			Switch	item=P01_L20HclPuMntnSwi
+			}
+
+		Group item=P01_sicx_L30{
+			Slider item=P01_L30TSu minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P01_L30FanExMotSchutz
+			}
+
+		Group item=P01_sicx_L40{
+			Slider item=P01_L40Temp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P01_L40FanExMotSchutz
+			}
+
+		Group item=P01_sicx_K10{
+			Slider item=P01_K10WTemp minValue=-30 maxValue=130 step=0.5
+
+			Switch	item=P01_K10PuMotSchutz
+			Switch	item=P01_K10PuMntnSwi
+			Switch	item=P01_K10PuMWDet
+
+			Switch	item=P01_K10FanMotSchutz
+			Switch	item=P01_K10FanLaufUe
+			Switch	item=P01_K10FanMntnSwi
+
+			}
+		}
+	
+	}
+	}
+
 }
   
