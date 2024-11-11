@@ -1,5 +1,5 @@
 
-Thing simatic:generic_device:SIC-AS04-L10 "L10 - Büro" (simatic:bridge:SIC-AS04) {
+Thing simatic:generic_device:SIC-AS04-L10 "P04 - L10 - Büro" (simatic:bridge:SIC-AS04) {
         Channels:
 			Type chNumber: L10TOa "Aussentemperatur" [ stateAddress="DB5.DBD2F", unit="°C" ]    		
 			Type chNumber: L10HclTrt "Hcl - Rücklauftemperatur" [ stateAddress="DB5.DBD6F", commandAddress="DB5.DBD6F", unit="°C" ]    		
@@ -24,7 +24,7 @@ Thing simatic:generic_device:SIC-AS04-L10 "L10 - Büro" (simatic:bridge:SIC-AS04
 			Type chSwitch: L10Filter2 "Filter 2" [ stateAddress="DB5.DBX95.4", commandAddress="DB5.DBX95.4" ]            
     }
 	
-Thing simatic:generic_device:SIC-AS04-L20 "L20 - Büro" (simatic:bridge:SIC-AS04) {
+Thing simatic:generic_device:SIC-AS04-L20 "P04 - L20 - Büro" (simatic:bridge:SIC-AS04) {
         Channels:
 			Type chNumber: L20TSu "Zulufttemperatur" [ stateAddress="DB5.DBD46F", commandAddress="DB5.DBD46F", unit="°C" ]    
 			
@@ -42,7 +42,7 @@ Thing simatic:generic_device:SIC-AS04-L20 "L20 - Büro" (simatic:bridge:SIC-AS04
 
     }
 
-Thing simatic:generic_device:SIC-AS04-Lxx "L30, L40, K10 - Abluft, Trafo, kühlturm" (simatic:bridge:SIC-AS04) {
+Thing simatic:generic_device:SIC-AS04-Lxx "P04 - L30, L40, K10 - Abluft, Trafo, kühlturm" (simatic:bridge:SIC-AS04) {
         Channels:
 			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", commandAddress="DB5.DBD50F", unit="°C" ]    
 			Type chSwitch: L30FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.2", commandAddress="DB5.DBX98.2" ]
