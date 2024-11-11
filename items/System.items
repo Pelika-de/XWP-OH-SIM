@@ -1,0 +1,22 @@
+/* übergeordnete Gruppen */
+Group	txio "TX-IOs" <pxc>
+Group	err	 "ERR" <pxc3>
+
+/* Gruppen aus Items */
+Group	px_txio "TX-IOs für PX Classic ( Vertriebsbüro )" <pxc> (txio)  // gruppe für Items aus PXC
+Group	ng_txio "TX-IOs für PXC NGA    ( Niderlassung  )" <pxc> (txio) // gruppe für Items aus NGA
+Group	err_txio "TX-IOs für ERR    ( Einzelraum  )" <pxc3> (err) // gruppe für Items aus ERR
+
+/* Gruppe Arbeitsplatz */
+Group:Switch:AND(ON, OFF) P01_WatchDog "Watch Dog [MAP(On_Offline.map):%s]" <pxc> 
+
+
+// Watch Dog PX
+Switch	PX_P01AS01	"LifeSign 01AS01 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_P01AS01" }
+Switch	PX_P01AS02	"LifeSign 01AS02 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_P01AS02" }
+Switch	PX_P01OHPX	"LifeSign 01OHPX [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_P01OHPX" }
+
+// Watch Dog NG
+Switch	NG_P01AS01	"LifeSign 01AS01 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_P01AS01" }
+Switch	NG_P01AS02	"LifeSign 01AS02 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_P01AS02" }
+Switch	NG_P01OHNG	"LifeSign 01OHNG [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_P01OHNG" }

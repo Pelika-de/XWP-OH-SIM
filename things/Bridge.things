@@ -1,0 +1,2 @@
+Bridge co7io-bacnet:ipv4:BAC4 [localDeviceId="471199", port="47812", refreshInterval="0", localNetworkNumber="0", localBindAddress="10.112.0.99", broadcastAddress="10.112.255.255"]
+Bridge simatic:bridge:SIC-AS01 "SIC-AS01"  [ address="10.103.1.30", rack="0", slot="2", charset="ISO-8859-1" ]

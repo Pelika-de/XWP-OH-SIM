@@ -1,0 +1,43 @@
+// Gruppen
+Group P01_err_txio "TX-IOs PX NGA - Platz 01" <pxc> (err_txio)	
+Group P01_SEG1 "Segment 1" <segment> (P01_err_txio)
+Group P01_SEG2 "Segment 2" <segment> (P01_err_txio)
+Group P01_SEG3 "Segment 3" <segment> (P01_err_txio)
+Group P01_SEG4 "Segment 4" <segment> (P01_err_txio)
+
+//IOn für ERR
+// Raumtempn
+Group P01_ERR_RT "Raumtempn" <temp> (P01_err_txio)
+Number	PO1_NG_RS1_RT	"Raumtemperatur Segment 1 [%.1f °C]"	<temp> (P01_ERR_RT, P01_SEG1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS1_RT" }
+Number	PO1_NG_RS2_RT	"Raumtemperatur Segment 2 [%.1f °C]"	<temp> (P01_ERR_RT, P01_SEG2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS2_RT" }
+Number	PO1_NG_RS3_RT	"Raumtemperatur Segment 3 [%.1f °C]"	<temp> (P01_ERR_RT, P01_SEG3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS3_RT" }
+Number	PO1_NG_RS4_RT	"Raumtemperatur Segment 4 [%.1f °C]"	<temp> (P01_ERR_RT, P01_SEG4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS4_RT" }
+
+// Lichtbefehl
+Group P01_ERR_LGT "Lichtbefehl" <light> (P01_err_txio)
+Number	PO1_NG_RS1_LGT	"Lichtbefehl Segment 1 [%.1f %%]"	<light> (P01_ERR_LGT, P01_SEG1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS1_LGT" }
+Number	PO1_NG_RS2_LGT	"Lichtbefehl Segment 2 [%.1f %%]"	<light> (P01_ERR_LGT, P01_SEG2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS2_LGT" }
+Number	PO1_NG_RS3_LGT	"Lichtbefehl Segment 3 [%.1f %%]"	<light> (P01_ERR_LGT, P01_SEG3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS3_LGT" }
+Number	PO1_NG_RS4_LGT	"Lichtbefehl Segment 4 [%.1f %%]"	<light> (P01_ERR_LGT, P01_SEG4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS4_LGT" }
+
+// Fenster
+Group P01_ERR_WND "Fenster" <fenster> (P01_err_txio) 
+Switch	PO1_NG_RS1_WND	"Fenster Segment 1 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P01_ERR_WND, P01_SEG1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS1_WND" }
+Switch	PO1_NG_RS2_WND	"Fenster Segment 2 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P01_ERR_WND, P01_SEG2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS2_WND" }
+Switch	PO1_NG_RS3_WND	"Fenster Segment 3 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P01_ERR_WND, P01_SEG3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS3_WND" }
+Switch	PO1_NG_RS4_WND	"Fenster Segment 4 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P01_ERR_WND, P01_SEG4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS4_WND" }
+
+// Präsenz
+Group P01_ERR_PD "Präsenz" <occ> (P01_err_txio)  
+Switch	PO1_NG_RS1_PD	"Präsenz Segment 1 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P01_ERR_PD, P01_SEG1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS1_PD" }
+Switch	PO1_NG_RS2_PD	"Präsenz Segment 2 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P01_ERR_PD, P01_SEG2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS2_PD" }
+Switch	PO1_NG_RS3_PD	"Präsenz Segment 3 [MAP(Abwesend_Anwesend.map):%s]" <occ> (P01_ERR_PD, P01_SEG3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS3_PD" }
+Switch	PO1_NG_RS4_PD	"Präsenz Segment 4 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P01_ERR_PD, P01_SEG4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS4_PD" }
+
+// Jalousien
+Group P01_ERR_BLS1 "Jalousien" <rollershutter> (P01_err_txio)
+Number	PO1_NG_RS1_BLS	"Jalousien Segment 1 [%.0f %%]"	<rollershutter> (P01_ERR_BLS, P01_SEG1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS1_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
+Number	PO1_NG_RS2_BLS	"Jalousien Segment 2 [%.0f %%]"	<rollershutter> (P01_ERR_BLS, P01_SEG2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS2_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
+Number	PO1_NG_RS3_BLS	"Jalousien Segment 3 [%.0f %%]"	<rollershutter> (P01_ERR_BLS, P01_SEG3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS3_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
+Number	PO1_NG_RS4_BLS	"Jalousien Segment 4 [%.0f %%]"	<rollershutter> (P01_ERR_BLS, P01_SEG4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_RS4_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
+
