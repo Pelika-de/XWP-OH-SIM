@@ -2,9 +2,9 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG "SIMP06:06OHNG" (co7io-bacnet:ip
  Channels:
 
  //WachtDog aus NGA Sim
-  Type deviceWriteableBoolean : WD_AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="420",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="421",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_OHNG "TXIO Binär Ausgang" [	readOnly="false",    instance="419",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="76",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="77",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_OHNG "TXIO Binär Ausgang" [	readOnly="false",    instance="75",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
 
  //IO Adressen für NGA
   Type deviceWriteableNumber : NG_IO_1_1 "TXIO Analog Eingang" [	readOnly="false",    instance="18",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]

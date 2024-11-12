@@ -1,24 +1,75 @@
 sitemap ACADEMY label="Academy 4.0"{
-    Frame label="Academy 4.0" {
+  Frame label="Academy 4.0" {
+	Group item=Watchdog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 	Group item=P01_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
-
 		Text label="Überwachung Simulation Platz 01" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P01AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P01AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P01OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P01AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P01AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
-			Text item=NG_P01OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]			
+			Text item=NG_P01OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			}
+		}
+	Group item=P02_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+		Text label="Überwachung Simulation Platz 02" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+			Text item=PX_P02AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P02AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P02OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P02AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P02AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P02OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			}
+		}
+	Group item=P04_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+		Text label="Überwachung Simulation Platz 04" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+			Text item=PX_P04AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P04AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P04OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P04AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P04AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P04OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			}
+		}
+	Group item=P06_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+		Text label="Überwachung Simulation Platz 06" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+			Text item=PX_P06AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P06AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P06OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P06AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P06AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P06OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			}
+		}
+	Group item=P08_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+		Text label="Überwachung Simulation Platz 08" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+			Text item=PX_P08AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P08AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P08OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P08AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P08AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P08OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			}
+		}
+	Group item=P10_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+		Text label="Überwachung Simulation Platz 10" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+			Text item=PX_P10AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P10AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=PX_P10OHPX labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P10AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P10AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
+			Text item=NG_P10OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
 		}
 	}
+}
 	Frame label="Desigo PX"{
 	Group item=px_txio {
-	Group item=P01_px_txio {	
+	Group item=P01_px_txio {
 		Group item=P01_PX_Modul_1 {
 			Slider item=P01_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P01_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P01_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -56,12 +107,12 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P01_IO_PX_Adresse_4_8
 			}
 		}
-/*	
-	Group item=P02_px_txio {	
+
+	Group item=P02_px_txio {
 		Group item=P02_PX_Modul_1 {
 			Slider item=P02_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P02_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -99,13 +150,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P02_IO_PX_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P04_px_txio {	
+
+
+	Group item=P04_px_txio {
 		Group item=P04_PX_Modul_1 {
 			Slider item=P04_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P04_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -143,13 +194,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P04_IO_PX_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P06_px_txio {	
+
+
+	Group item=P06_px_txio {
 		Group item=P06_PX_Modul_1 {
 			Slider item=P06_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P06_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -187,13 +238,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P06_IO_PX_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P08_px_txio {	
+
+
+	Group item=P08_px_txio {
 		Group item=P08_PX_Modul_1 {
 			Slider item=P08_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P08_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -231,13 +282,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P08_IO_PX_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P10_px_txio {	
+
+
+	Group item=P10_px_txio {
 		Group item=P10_PX_Modul_1 {
 			Slider item=P10_IO_PX_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_PX_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P10_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P10_IO_PX_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_PX_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_PX_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_PX_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -275,19 +326,19 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P10_IO_PX_Adresse_4_8
 			}
 		}
-*/		
-		}	// ENDE Group item=px_txio 
+
+		}	// ENDE Group item=px_txio
 	}	// ENDE Frame label="Desigo PX"
-			
-		
+
+
 
 	Frame label="Desigo NGA"{
 	Group item=ng_txio {
-	Group item=P01_ng_txio {	
+	Group item=P01_ng_txio {
 		Group item=P01_NG_Modul_1 {
 			Slider item=P01_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P01_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P01_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P01_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -325,12 +376,12 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P01_IO_NG_Adresse_4_8
 			}
 		}
-/*	
-	Group item=P02_ng_txio {	
+
+	Group item=P02_ng_txio {
 		Group item=P02_NG_Modul_1 {
 			Slider item=P02_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P02_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P02_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -368,13 +419,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P02_IO_PX_NG_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P04_ng_txio {	
+
+
+	Group item=P04_ng_txio {
 		Group item=P04_NG_Modul_1 {
 			Slider item=P04_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P04_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P04_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -412,13 +463,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P04_IO_PX_NG_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P06_ng_txio {	
+
+
+	Group item=P06_ng_txio {
 		Group item=P06_NG_Modul_1 {
 			Slider item=P06_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P06_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P06_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -456,13 +507,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P06_IO_PX_NG_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P08_ng_txio {	
+
+
+	Group item=P08_ng_txio {
 		Group item=P08_NG_Modul_1 {
 			Slider item=P08_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P08_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P08_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -500,13 +551,13 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P08_IO_PX_NG_Adresse_4_8
 			}
 		}
-*/	
-/*
-	Group item=P10_ng_txio {	
+
+
+	Group item=P10_ng_txio {
 		Group item=P10_NG_Modul_1 {
 			Slider item=P10_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P10_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5 
+			Slider item=P10_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
 			Slider item=P10_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
@@ -544,54 +595,54 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch item=P10_IO_NG_Adresse_4_8
 			}
 		}
-	
-*/
+
+
 		} // ENDE Group item=ng_txio
 	} // Frame label="Desigo NGA
-	
 
-	
+
+
 	Frame label="Raum Regelung" {
 	Group item=err_txio {
 	Group item=P01_err_txio {
 		Group item=P01_SEG1{
 			Switch item=PO1_NG_RS1_WND
-			Switch item=PO1_NG_RS1_PD	
-			
+			Switch item=PO1_NG_RS1_PD
+
 			Slider item=PO1_NG_RS1_RT minValue=0 maxValue=50 step=0.5
 			Slider item=PO1_NG_RS1_LGT minValue=0 maxValue=100 step=5.0
 			Selection item=PO1_NG_RS1_BLS
 			}
 		Group item=P01_SEG2{
 			Switch item=PO1_NG_RS2_WND
-			Switch item=PO1_NG_RS2_PD	
-			
+			Switch item=PO1_NG_RS2_PD
+
 			Slider item=PO1_NG_RS2_RT minValue=0 maxValue=50 step=0.5
 			Slider item=PO1_NG_RS2_LGT minValue=0 maxValue=100 step=5.0
 			Selection item=PO1_NG_RS2_BLS
 			}
 		Group item=P01_SEG3{
 			Switch item=PO1_NG_RS3_WND
-			Switch item=PO1_NG_RS3_PD	
-			
+			Switch item=PO1_NG_RS3_PD
+
 			Slider item=PO1_NG_RS3_RT minValue=0 maxValue=50 step=0.5
 			Slider item=PO1_NG_RS3_LGT minValue=0 maxValue=100 step=5.0
 			Selection item=PO1_NG_RS3_BLS
 			}
 		Group item=P01_SEG4{
 			Switch item=PO1_NG_RS4_WND
-			Switch item=PO1_NG_RS4_PD	
-			
+			Switch item=PO1_NG_RS4_PD
+
 			Slider item=PO1_NG_RS4_RT minValue=0 maxValue=50 step=0.5
 			Slider item=PO1_NG_RS4_LGT minValue=0 maxValue=100 step=5.0
 			Selection item=PO1_NG_RS4_BLS
 			}
 		}
-	
+
 /*
 	Group item=P02_ERR {
 		Frame label="Segment 1"{
-			Switch item=P02_ERR_WC_SEG1	
+			Switch item=P02_ERR_WC_SEG1
 			Slider item=P02_ERR_TR_SEG1 minValue=0 maxValue=50 step=0.5
 			}
 		Frame label="Segment 2"{
@@ -603,11 +654,11 @@ sitemap ACADEMY label="Academy 4.0"{
 			Slider item=P02_ERR_TR_SEG3 minValue=0 maxValue=50 step=0.5
 		}
 		}
-*/	
+*/
 /*
 	Group item=P04_ERR {
 		Frame label="Segment 1"{
-			Switch item=P04_ERR_WC_SEG1	
+			Switch item=P04_ERR_WC_SEG1
 			Slider item=P04_ERR_TR_SEG1 minValue=0 maxValue=50 step=0.5
 			}
 		Frame label="Segment 2"{
@@ -619,11 +670,11 @@ sitemap ACADEMY label="Academy 4.0"{
 			Slider item=P04_ERR_TR_SEG3 minValue=0 maxValue=50 step=0.5
 		}
 		}
-*/	
+*/
 /*
 	Group item=P06_ERR {
 		Frame label="Segment 1"{
-			Switch item=P06_ERR_WC_SEG1	
+			Switch item=P06_ERR_WC_SEG1
 			Slider item=P06_ERR_TR_SEG1 minValue=0 maxValue=50 step=0.5
 			}
 		Frame label="Segment 2"{
@@ -635,11 +686,11 @@ sitemap ACADEMY label="Academy 4.0"{
 			Slider item=P06_ERR_TR_SEG3 minValue=0 maxValue=50 step=0.5
 		}
 		}
-*/	
+*/
 /*
 	Group item=P08_ERR {
 		Frame label="Segment 1"{
-			Switch item=P08_ERR_WC_SEG1	
+			Switch item=P08_ERR_WC_SEG1
 			Slider item=P08_ERR_TR_SEG1 minValue=0 maxValue=50 step=0.5
 			}
 		Frame label="Segment 2"{
@@ -651,11 +702,11 @@ sitemap ACADEMY label="Academy 4.0"{
 			Slider item=P08_ERR_TR_SEG3 minValue=0 maxValue=50 step=0.5
 		}
 		}
-*/	
+*/
 /*
 	Group item=P10_ERR {
 		Frame label="Segment 1"{
-			Switch item=P10_ERR_WC_SEG1	
+			Switch item=P10_ERR_WC_SEG1
 			Slider item=P10_ERR_TR_SEG1 minValue=0 maxValue=50 step=0.5
 			}
 		Frame label="Segment 2"{
@@ -675,7 +726,7 @@ sitemap ACADEMY label="Academy 4.0"{
 	Group item=sicx_io {
 	Group item=P01_sicx_io {
 		Group item=P01_sicx_L10{
-			Text item=P01_L10TOa 
+			Text item=P01_L10TOa
 			Slider item=P01_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P01_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P01_L10Tex minValue=-30 maxValue=130 step=5.0
@@ -739,10 +790,10 @@ sitemap ACADEMY label="Academy 4.0"{
 
 			}
 		}
-	
+
 	Group item=P02_sicx_io {
 		Group item=P02_sicx_L10{
-			Text item=P02_L10TOa 
+			Text item=P02_L10TOa
 			Slider item=P02_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P02_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P02_L10Tex minValue=-30 maxValue=130 step=5.0
@@ -806,10 +857,10 @@ sitemap ACADEMY label="Academy 4.0"{
 
 			}
 		}
-	
+
 	Group item=P04_sicx_io {
 		Group item=P04_sicx_L10{
-			Text item=P04_L10TOa 
+			Text item=P04_L10TOa
 			Slider item=P04_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P04_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P04_L10Tex minValue=-30 maxValue=130 step=5.0
@@ -876,7 +927,7 @@ sitemap ACADEMY label="Academy 4.0"{
 
 	Group item=P06_sicx_io {
 		Group item=P06_sicx_L10{
-			Text item=P06_L10TOa 
+			Text item=P06_L10TOa
 			Slider item=P06_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P06_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P06_L10Tex minValue=-30 maxValue=130 step=5.0
@@ -943,7 +994,7 @@ sitemap ACADEMY label="Academy 4.0"{
 
 	Group item=P08_sicx_io {
 		Group item=P08_sicx_L10{
-			Text item=P08_L10TOa 
+			Text item=P08_L10TOa
 			Slider item=P08_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P08_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P08_L10Tex minValue=-30 maxValue=130 step=5.0
@@ -1007,10 +1058,10 @@ sitemap ACADEMY label="Academy 4.0"{
 
 			}
 		}
-	
+
 	Group item=P10_sicx_io {
 		Group item=P10_sicx_L10{
-			Text item=P10_L10TOa 
+			Text item=P10_L10TOa
 			Slider item=P10_L10HclTrt minValue=-30 maxValue=130 step=5.0
 			Slider item=P10_L10TSu minValue=-30 maxValue=130 step=0.5
 			Slider item=P10_L10Tex minValue=-30 maxValue=130 step=5.0

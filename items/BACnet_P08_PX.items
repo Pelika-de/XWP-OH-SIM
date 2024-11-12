@@ -1,5 +1,5 @@
 // Gruppen
-Group	P08_px_txio "TX-IOs PX Classic - Platz 02" <pxc> (px_txio)
+Group	P08_px_txio "TX-IOs PX Classic - Platz 08" <pxc> (px_txio)
 
 //IO Adressen für PX
 // I-O Mudul 1
