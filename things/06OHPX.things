@@ -1,4 +1,4 @@
-Thing co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX "SIMP01:01OHPX" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.112.1.14", instance="40114", port="47812", refreshInterval="10000",  discoverObjects="false", network="0"] {
+Thing co7io-bacnet:ip-device:BAC4:SIMP06_06OHPX "SIMP06:06OHPX" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.112.6.14", instance="40614", port="47812", refreshInterval="10000",  discoverObjects="false", network="0"] {
  Channels:
 
  //WachtDog aus PX Sim

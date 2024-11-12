@@ -1,11 +1,11 @@
 Thing co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG "SIMP01:01OHNG" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.112.1.11", instance="40111", port="47812", refreshInterval="10000",  discoverObjects="false", network="0"] {
  Channels:
 
- //WachtDog aus NGA Sim 
-  Type deviceWriteableBoolean : WD_P01AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="420",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_P01AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="421",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_P01OHNG "TXIO Binär Ausgang" [	readOnly="false",    instance="419",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
- 
+ //WachtDog aus NGA Sim
+  Type deviceWriteableBoolean : WD_AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="420",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="421",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_OHNG "TXIO Binär Ausgang" [	readOnly="false",    instance="419",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
  //IO Adressen für NGA
   Type deviceWriteableNumber : NG_IO_1_1 "TXIO Analog Eingang" [	readOnly="false",    instance="18",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableNumber : NG_IO_1_2 "TXIO Analog Eingang" [	readOnly="false",    instance="19",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
@@ -68,7 +68,7 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG "SIMP01:01OHNG" (co7io-bacnet:ip
   Type deviceWriteableNumber : NG_RS2_LGT "Lichtbefehl Segment 2" [	readOnly="false",    instance="54",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableNumber : NG_RS3_LGT "Lichtbefehl Segment 3" [	readOnly="false",    instance="57",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableNumber : NG_RS4_LGT "Lichtbefehl Segment 4" [	readOnly="false",    instance="60",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  
+
 //IO Adressen für Räume ( Fenster )
   Type deviceWriteableBoolean : NG_RS1_WND "Fenster Segment 1" [	readOnly="false",    instance="79",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableBoolean : NG_RS2_WND "Fenster Segment 2" [	readOnly="false",    instance="81",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]

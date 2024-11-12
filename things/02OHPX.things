@@ -2,9 +2,9 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX "SIMP02:02OHPX" (co7io-bacnet:ip
  Channels:
 
  //WachtDog aus PX Sim
-  Type deviceWriteableBoolean : WD_P01AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="34",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_P01AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="35",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : WD_P01OHPX "TXIO Binär Ausgang" [	readOnly="false",    instance="33",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="34",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="35",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_OHPX "TXIO Binär Ausgang" [	readOnly="false",    instance="33",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
 
  //IO Adressen für PX
   Type deviceWriteableNumber : PX_IO_1_1 "TXIO Analog Eingang" [	readOnly="false",    instance="1",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
