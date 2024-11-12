@@ -1,6 +1,6 @@
 sitemap ACADEMY label="Academy 4.0"{
   Frame label="Academy 4.0" {
-	Group item=Watchdog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+	Group item=WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 	Group item=P01_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 		Text label="Überwachung Simulation Platz 01" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P01AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
