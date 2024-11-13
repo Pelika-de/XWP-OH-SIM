@@ -1,7 +1,6 @@
 sitemap ACADEMY label="Academy 4.0"{
   Frame label="Academy 4.0" {
 	Group item=WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
-	Group item=P01_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 		Text label="Überwachung Simulation Platz 01" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P01AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P01AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -10,8 +9,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P01AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P01OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
-	Group item=P02_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+
 		Text label="Überwachung Simulation Platz 02" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P02AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P02AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -20,8 +18,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P02AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P02OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
-	Group item=P04_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+
 		Text label="Überwachung Simulation Platz 04" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P04AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P04AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -30,8 +27,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P04AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P04OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
-	Group item=P06_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+
 		Text label="Überwachung Simulation Platz 06" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P06AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P06AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -40,8 +36,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P06AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P06OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
-	Group item=P08_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+
 		Text label="Überwachung Simulation Platz 08" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P08AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P08AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -50,8 +45,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P08AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P08OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
-	Group item=P10_WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+
 		Text label="Überwachung Simulation Platz 10" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 			Text item=PX_P10AS01 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=PX_P10AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
@@ -60,7 +54,7 @@ sitemap ACADEMY label="Academy 4.0"{
 			Text item=NG_P10AS02 labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			Text item=NG_P10OHNG labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"]
 			}
-		}
+
 	}
 }
 	Frame label="Desigo PX"{
@@ -379,176 +373,176 @@ sitemap ACADEMY label="Academy 4.0"{
 
 	Group item=P02_ng_txio {
 		Group item=P02_NG_Modul_1 {
-			Slider item=P02_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
-			Slider item=P02_IO_PX_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
-			Slider item=P02_IO_PX_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
+			Slider item=P02_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
+			Slider item=P02_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
+			Slider item=P02_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
+			Slider item=P02_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
+			Slider item=P02_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
+			Slider item=P02_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
+			Slider item=P02_IO_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
+			Slider item=P02_IO_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
 			}
 		Group item=P02_NG_Modul_2 {
-			Slider item=P02_IO_PX_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
-			Slider item=P02_IO_PX_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
+			Slider item=P02_IO_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
 			}
 		Group item=P02_NG_Modul_3 {
-			Switch item=P02_IO_PX_NG_Adresse_3_1
-			Switch item=P02_IO_PX_NG_Adresse_3_2
-			Switch item=P02_IO_PX_NG_Adresse_3_3
-			Switch item=P02_IO_PX_NG_Adresse_3_4
-			Switch item=P02_IO_PX_NG_Adresse_3_5
-			Switch item=P02_IO_PX_NG_Adresse_3_6
-			Switch item=P02_IO_PX_NG_Adresse_3_7
-			Switch item=P02_IO_PX_NG_Adresse_3_8
+			Switch item=P02_IO_NG_Adresse_3_1
+			Switch item=P02_IO_NG_Adresse_3_2
+			Switch item=P02_IO_NG_Adresse_3_3
+			Switch item=P02_IO_NG_Adresse_3_4
+			Switch item=P02_IO_NG_Adresse_3_5
+			Switch item=P02_IO_NG_Adresse_3_6
+			Switch item=P02_IO_NG_Adresse_3_7
+			Switch item=P02_IO_NG_Adresse_3_8
 			}
 		Group item=P02_NG_Modul_4 {
-			Switch item=P02_IO_PX_NG_Adresse_4_1
-			Switch item=P02_IO_PX_NG_Adresse_4_2
-			Switch item=P02_IO_PX_NG_Adresse_4_3
-			Switch item=P02_IO_PX_NG_Adresse_4_4
-			Switch item=P02_IO_PX_NG_Adresse_4_5
-			Switch item=P02_IO_PX_NG_Adresse_4_6
-			Switch item=P02_IO_PX_NG_Adresse_4_7
-			Switch item=P02_IO_PX_NG_Adresse_4_8
+			Switch item=P02_IO_NG_Adresse_4_1
+			Switch item=P02_IO_NG_Adresse_4_2
+			Switch item=P02_IO_NG_Adresse_4_3
+			Switch item=P02_IO_NG_Adresse_4_4
+			Switch item=P02_IO_NG_Adresse_4_5
+			Switch item=P02_IO_NG_Adresse_4_6
+			Switch item=P02_IO_NG_Adresse_4_7
+			Switch item=P02_IO_NG_Adresse_4_8
 			}
 		}
 
 
 	Group item=P04_ng_txio {
 		Group item=P04_NG_Modul_1 {
-			Slider item=P04_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
-			Slider item=P04_IO_PX_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
-			Slider item=P04_IO_PX_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
+			Slider item=P04_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
+			Slider item=P04_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
+			Slider item=P04_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
+			Slider item=P04_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
+			Slider item=P04_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
+			Slider item=P04_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
+			Slider item=P04_IO_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
+			Slider item=P04_IO_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
 			}
 		Group item=P04_NG_Modul_2 {
-			Slider item=P04_IO_PX_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
-			Slider item=P04_IO_PX_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
+			Slider item=P04_IO_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
 			}
 		Group item=P04_NG_Modul_3 {
-			Switch item=P04_IO_PX_NG_Adresse_3_1
-			Switch item=P04_IO_PX_NG_Adresse_3_2
-			Switch item=P04_IO_PX_NG_Adresse_3_3
-			Switch item=P04_IO_PX_NG_Adresse_3_4
-			Switch item=P04_IO_PX_NG_Adresse_3_5
-			Switch item=P04_IO_PX_NG_Adresse_3_6
-			Switch item=P04_IO_PX_NG_Adresse_3_7
-			Switch item=P04_IO_PX_NG_Adresse_3_8
+			Switch item=P04_IO_NG_Adresse_3_1
+			Switch item=P04_IO_NG_Adresse_3_2
+			Switch item=P04_IO_NG_Adresse_3_3
+			Switch item=P04_IO_NG_Adresse_3_4
+			Switch item=P04_IO_NG_Adresse_3_5
+			Switch item=P04_IO_NG_Adresse_3_6
+			Switch item=P04_IO_NG_Adresse_3_7
+			Switch item=P04_IO_NG_Adresse_3_8
 			}
 		Group item=P04_NG_Modul_4 {
-			Switch item=P04_IO_PX_NG_Adresse_4_1
-			Switch item=P04_IO_PX_NG_Adresse_4_2
-			Switch item=P04_IO_PX_NG_Adresse_4_3
-			Switch item=P04_IO_PX_NG_Adresse_4_4
-			Switch item=P04_IO_PX_NG_Adresse_4_5
-			Switch item=P04_IO_PX_NG_Adresse_4_6
-			Switch item=P04_IO_PX_NG_Adresse_4_7
-			Switch item=P04_IO_PX_NG_Adresse_4_8
+			Switch item=P04_IO_NG_Adresse_4_1
+			Switch item=P04_IO_NG_Adresse_4_2
+			Switch item=P04_IO_NG_Adresse_4_3
+			Switch item=P04_IO_NG_Adresse_4_4
+			Switch item=P04_IO_NG_Adresse_4_5
+			Switch item=P04_IO_NG_Adresse_4_6
+			Switch item=P04_IO_NG_Adresse_4_7
+			Switch item=P04_IO_NG_Adresse_4_8
 			}
 		}
 
 
 	Group item=P06_ng_txio {
 		Group item=P06_NG_Modul_1 {
-			Slider item=P06_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
-			Slider item=P06_IO_PX_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
-			Slider item=P06_IO_PX_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
+			Slider item=P06_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
+			Slider item=P06_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
+			Slider item=P06_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
+			Slider item=P06_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
+			Slider item=P06_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
+			Slider item=P06_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
+			Slider item=P06_IO_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
+			Slider item=P06_IO_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
 			}
 		Group item=P06_NG_Modul_2 {
-			Slider item=P06_IO_PX_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
-			Slider item=P06_IO_PX_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
+			Slider item=P06_IO_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
 			}
 		Group item=P06_NG_Modul_3 {
-			Switch item=P06_IO_PX_NG_Adresse_3_1
-			Switch item=P06_IO_PX_NG_Adresse_3_2
-			Switch item=P06_IO_PX_NG_Adresse_3_3
-			Switch item=P06_IO_PX_NG_Adresse_3_4
-			Switch item=P06_IO_PX_NG_Adresse_3_5
-			Switch item=P06_IO_PX_NG_Adresse_3_6
-			Switch item=P06_IO_PX_NG_Adresse_3_7
-			Switch item=P06_IO_PX_NG_Adresse_3_8
+			Switch item=P06_IO_NG_Adresse_3_1
+			Switch item=P06_IO_NG_Adresse_3_2
+			Switch item=P06_IO_NG_Adresse_3_3
+			Switch item=P06_IO_NG_Adresse_3_4
+			Switch item=P06_IO_NG_Adresse_3_5
+			Switch item=P06_IO_NG_Adresse_3_6
+			Switch item=P06_IO_NG_Adresse_3_7
+			Switch item=P06_IO_NG_Adresse_3_8
 			}
 		Group item=P06_NG_Modul_4 {
-			Switch item=P06_IO_PX_NG_Adresse_4_1
-			Switch item=P06_IO_PX_NG_Adresse_4_2
-			Switch item=P06_IO_PX_NG_Adresse_4_3
-			Switch item=P06_IO_PX_NG_Adresse_4_4
-			Switch item=P06_IO_PX_NG_Adresse_4_5
-			Switch item=P06_IO_PX_NG_Adresse_4_6
-			Switch item=P06_IO_PX_NG_Adresse_4_7
-			Switch item=P06_IO_PX_NG_Adresse_4_8
+			Switch item=P06_IO_NG_Adresse_4_1
+			Switch item=P06_IO_NG_Adresse_4_2
+			Switch item=P06_IO_NG_Adresse_4_3
+			Switch item=P06_IO_NG_Adresse_4_4
+			Switch item=P06_IO_NG_Adresse_4_5
+			Switch item=P06_IO_NG_Adresse_4_6
+			Switch item=P06_IO_NG_Adresse_4_7
+			Switch item=P06_IO_NG_Adresse_4_8
 			}
 		}
 
 
 	Group item=P08_ng_txio {
 		Group item=P08_NG_Modul_1 {
-			Slider item=P08_IO_PX_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
-			Slider item=P08_IO_PX_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
-			Slider item=P08_IO_PX_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
+			Slider item=P08_IO_NG_Adresse_1_1 minValue=-30 maxValue=80 step=0.5
+			Slider item=P08_IO_NG_Adresse_1_2 minValue=-30 maxValue=80 step=0.5
+			Slider item=P08_IO_NG_Adresse_1_3 minValue=-30 maxValue=80 step=0.5
+			Slider item=P08_IO_NG_Adresse_1_4 minValue=-30 maxValue=80 step=0.5
+			Slider item=P08_IO_NG_Adresse_1_5 minValue=-30 maxValue=80 step=0.5
+			Slider item=P08_IO_NG_Adresse_1_6 minValue=0 maxValue=500 step=10
+			Slider item=P08_IO_NG_Adresse_1_7 minValue=10 maxValue=90 step=1
+			Slider item=P08_IO_NG_Adresse_1_8 minValue=10 maxValue=90 step=1
 			}
 		Group item=P08_NG_Modul_2 {
-			Slider item=P08_IO_PX_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
-			Slider item=P08_IO_PX_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_1 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_2 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_3 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_4 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_5 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_6 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_7 minValue=-30 maxValue=130 step=0.5
+			Slider item=P08_IO_NG_Adresse_2_8 minValue=-30 maxValue=130 step=0.5
 			}
 		Group item=P08_NG_Modul_3 {
-			Switch item=P08_IO_PX_NG_Adresse_3_1
-			Switch item=P08_IO_PX_NG_Adresse_3_2
-			Switch item=P08_IO_PX_NG_Adresse_3_3
-			Switch item=P08_IO_PX_NG_Adresse_3_4
-			Switch item=P08_IO_PX_NG_Adresse_3_5
-			Switch item=P08_IO_PX_NG_Adresse_3_6
-			Switch item=P08_IO_PX_NG_Adresse_3_7
-			Switch item=P08_IO_PX_NG_Adresse_3_8
+			Switch item=P08_IO_NG_Adresse_3_1
+			Switch item=P08_IO_NG_Adresse_3_2
+			Switch item=P08_IO_NG_Adresse_3_3
+			Switch item=P08_IO_NG_Adresse_3_4
+			Switch item=P08_IO_NG_Adresse_3_5
+			Switch item=P08_IO_NG_Adresse_3_6
+			Switch item=P08_IO_NG_Adresse_3_7
+			Switch item=P08_IO_NG_Adresse_3_8
 			}
 		Group item=P08_NG_Modul_4 {
-			Switch item=P08_IO_PX_NG_Adresse_4_1
-			Switch item=P08_IO_PX_NG_Adresse_4_2
-			Switch item=P08_IO_PX_NG_Adresse_4_3
-			Switch item=P08_IO_PX_NG_Adresse_4_4
-			Switch item=P08_IO_PX_NG_Adresse_4_5
-			Switch item=P08_IO_PX_NG_Adresse_4_6
-			Switch item=P08_IO_PX_NG_Adresse_4_7
-			Switch item=P08_IO_PX_NG_Adresse_4_8
+			Switch item=P08_IO_NG_Adresse_4_1
+			Switch item=P08_IO_NG_Adresse_4_2
+			Switch item=P08_IO_NG_Adresse_4_3
+			Switch item=P08_IO_NG_Adresse_4_4
+			Switch item=P08_IO_NG_Adresse_4_5
+			Switch item=P08_IO_NG_Adresse_4_6
+			Switch item=P08_IO_NG_Adresse_4_7
+			Switch item=P08_IO_NG_Adresse_4_8
 			}
 		}
 
