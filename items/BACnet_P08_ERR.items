@@ -7,35 +7,35 @@ Group P08_seg4 "Segment 4" <segment> (P08_err_txio)
 
 //IOn für ERR
 // Raumtempn
-Group P08_err_RT "Raumtempn" <temp> (P08_err_txio)
+Group:Number:AVG P08_err_RT "Raumtemperaturen" <temp> (P08_err_txio)
 Number	P08_NG_rs1_RT	"Raumtemperatur Segment 1 [%.1f °C]"	<temp> (P08_err_RT, P08_seg1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS1_RT" }
 Number	P08_NG_rs2_RT	"Raumtemperatur Segment 2 [%.1f °C]"	<temp> (P08_err_RT, P08_seg2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS2_RT" }
 Number	P08_NG_rs3_RT	"Raumtemperatur Segment 3 [%.1f °C]"	<temp> (P08_err_RT, P08_seg3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS3_RT" }
 Number	P08_NG_rs4_RT	"Raumtemperatur Segment 4 [%.1f °C]"	<temp> (P08_err_RT, P08_seg4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS4_RT" }
 
 // Lichtbefehl
-Group P08_err_LGT "Lichtbefehl" <light> (P08_err_txio)
+Group:Number:AVG P08_err_LGT "Lichtbefehl" <light> (P08_err_txio)
 Number	P08_NG_rs1_LGT	"Lichtbefehl Segment 1 [%.1f %%]"	<light> (P08_err_LGT, P08_seg1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS1_LGT" }
 Number	P08_NG_rs2_LGT	"Lichtbefehl Segment 2 [%.1f %%]"	<light> (P08_err_LGT, P08_seg2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS2_LGT" }
 Number	P08_NG_rs3_LGT	"Lichtbefehl Segment 3 [%.1f %%]"	<light> (P08_err_LGT, P08_seg3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS3_LGT" }
 Number	P08_NG_rs4_LGT	"Lichtbefehl Segment 4 [%.1f %%]"	<light> (P08_err_LGT, P08_seg4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS4_LGT" }
 
 // Fenster
-Group P08_err_WND "Fenster" <fenster> (P08_err_txio)
+Group:Switch:OR(ON, OFF) P08_err_WND "Fenster" <fenster> (P08_err_txio)
 Switch	P08_NG_rs1_WND	"Fenster Segment 1 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P08_err_WND, P08_seg1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS1_WND" }
 Switch	P08_NG_rs2_WND	"Fenster Segment 2 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P08_err_WND, P08_seg2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS2_WND" }
 Switch	P08_NG_rs3_WND	"Fenster Segment 3 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P08_err_WND, P08_seg3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS3_WND" }
 Switch	P08_NG_rs4_WND	"Fenster Segment 4 [MAP(CLOSE_OPEN.map):%s]"	<fenster> (P08_err_WND, P08_seg4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS4_WND" }
 
 // Präsenz
-Group P08_err_PD "Präsenz" <occ> (P08_err_txio)
+Group:Switch:OR(ON, OFF) P08_err_PD "Präsenz" <occ> (P08_err_txio)
 Switch	P08_NG_rs1_PD	"Präsenz Segment 1 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P08_err_PD, P08_seg1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS1_PD" }
 Switch	P08_NG_rs2_PD	"Präsenz Segment 2 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P08_err_PD, P08_seg2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS2_PD" }
 Switch	P08_NG_rs3_PD	"Präsenz Segment 3 [MAP(Abwesend_Anwesend.map):%s]" <occ> (P08_err_PD, P08_seg3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS3_PD" }
 Switch	P08_NG_rs4_PD	"Präsenz Segment 4 [MAP(Abwesend_Anwesend.map):%s]"	<occ> (P08_err_PD, P08_seg4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS4_PD" }
 
 // Jalousien
-Group P08_err_BLS1 "Jalousien" <rollershutter> (P08_err_txio)
+Group:Number:AVG P08_err_BLS "Jalousien" <rollershutter> (P08_err_txio)
 Number	P08_NG_rs1_BLS	"Jalousien Segment 1 [%.0f %%]"	<rollershutter> (P08_err_BLS, P08_seg1)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS1_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
 Number	P08_NG_rs2_BLS	"Jalousien Segment 2 [%.0f %%]"	<rollershutter> (P08_err_BLS, P08_seg2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS2_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
 Number	P08_NG_rs3_BLS	"Jalousien Segment 3 [%.0f %%]"	<rollershutter> (P08_err_BLS, P08_seg3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:NG_RS3_BLS", stateDescription="pattern" [options="50.0=Stop,0.0=Auf,100.0=Ab"] }
