@@ -87,5 +87,4 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG "SIMP01:01OHNG" (co7io-bacnet:ip
   Type deviceWriteableNumber : NG_RS3_BLS "Jalousie Segment 3" [	readOnly="false",    instance="56",    type="ANALOG_VALUE",    refreshInterval="5000",    propertyIdentifier="present-value"  ]
   Type deviceWriteableNumber : NG_RS4_BLS "Jalousie Segment 4" [	readOnly="false",    instance="59",    type="ANALOG_VALUE",    refreshInterval="5000",    propertyIdentifier="present-value"  ]
 
-
 }
