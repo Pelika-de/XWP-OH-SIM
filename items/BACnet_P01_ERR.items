@@ -1,5 +1,5 @@
 // Gruppen
-Group P01_err_txio "TX-IOs PX NGA - Platz 01" <pxc> (err_txio)
+Group P01_err_txio "Raumautomation - Platz 01" <pxc3> (err_txio)
 Group P01_seg1 "Segment 1" <segment> (P01_err_txio)
 Group P01_seg2 "Segment 2" <segment> (P01_err_txio)
 Group P01_seg3 "Segment 3" <segment> (P01_err_txio)

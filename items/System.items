@@ -7,8 +7,8 @@ Group sicx "Siclimat" <sicx>
 /* Gruppen aus Items */
 Group px_txio "TX-IOs für PX Classic ( Vertriebsbüro )" <pxc> (pxc)  // gruppe für Items aus PXC
 Group ng_txio "TX-IOs für PXC NGA    ( Niderlassung  )" <pxc> (gen2) // gruppe für Items aus NGA
-Group err_txio "TX-IOs für ERR    ( Einzelraum  )" <pxc3> (err) // gruppe für Items aus ERR
-Group sicx_io "IO für Siclimat (Werkhalle  )" <sicx> (sicx) // gruppe für Items aus Siclimat
+Group err_txio "IOs für ERR    ( Einzelraum  )" <pxc3> (err) // gruppe für Items aus ERR
+Group sicx_io "IOs für Siclimat (Werkhalle  )" <sicx> (sicx) // gruppe für Items aus Siclimat
 
 /* Gruppe Arbeitsplatz */
 Group:Switch:AND(ON, OFF) WatchDog "Watch Dog [MAP(On_Offline.map):%s]" <pxc> (pxc)
