@@ -36,7 +36,7 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG "SIMP01:01OHNG" (co7io-bacnet:ip
 
   Type deviceWriteableBoolean : NG_IO_4_1 "TXIO Binär Eingang" [	readOnly="false",    instance="55",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableBoolean : NG_IO_4_2 "TXIO Binär Eingang" [	readOnly="false",    instance="56",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-  Type deviceWriteableBoolean : NG_IO_4_3 "TXIO Binär Eingang" [	readOnly="false",    instance="571",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : NG_IO_4_3 "TXIO Binär Eingang" [	readOnly="false",    instance="57",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableBoolean : NG_IO_4_4 "TXIO Binär Eingang" [	readOnly="false",    instance="58",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableBoolean : NG_IO_4_5 "TXIO Binär Eingang" [	readOnly="false",    instance="59",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
   Type deviceWriteableBoolean : NG_IO_4_6 "TXIO Binär Eingang" [	readOnly="false",    instance="60",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
