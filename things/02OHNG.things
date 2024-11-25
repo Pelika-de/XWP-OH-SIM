@@ -1,4 +1,4 @@
-Thing co7io-bacnet:ip-device:BAC4:SIMP02_02OHNG "SIMP02:02OHNG" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.112.2.11", instance="40211", port="47812", refreshInterval="0",  discoverObjects="false", network="0"] {
+Thing co7io-bacnet:ip-device:BAC4:SIMP02_02OHNG "SIMP02:02OHNG" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.112.2.11", instance="40211", port="47812", refreshInterval="10000",  discoverObjects="false", network="0"] {
  Channels:
 
  //WachtDog aus NGA Sim
