@@ -1,5 +1,5 @@
 // Gruppen
-Group P04_sicx_io "SICX - Platz 04" <sicx> (sicx_io)	
+Group P04_sicx_io "SICX - Platz 04" <sicx> (sicx_io)
 
 //IO Adressen für SICX
 // Anlage L10
@@ -62,3 +62,8 @@ Switch	P04_K10PuMWDet	"K10 Pumpe Trockenlauf [MAP(Normal_Alarm.map):%s]"	<alarm>
 Switch	P04_K10FanMotSchutz	"K10 Ventilator Motorschutz [MAP(Normal_Alarm.map):%s]"	<alarm> (P04_sicx_K10)	{ channel="simatic:generic_device:SIC-AS04-Lxx:K10FanMotSchutz" }
 Switch	P04_K10FanLaufUe	"K10 Ventilator Wartung [MAP(Normal_Alarm.map):%s]"	<alarm> (P04_sicx_K10)	{ channel="simatic:generic_device:SIC-AS04-Lxx:K10FanLaufUe" }
 Switch	P04_K10FanMntnSwi	"K10 Ventilator Trockenlauf [MAP(Normal_Alarm.map):%s]"	<alarm> (P04_sicx_K10)	{ channel="simatic:generic_device:SIC-AS04-Lxx:K10FanMntnSwi" }
+
+// Anlage Allgemein
+Group P04_sicx_Allg "Anlage Allgemein" <sicx> (P04_sicx_io)
+Switch	P04_AS04Quit	"Anlagen Quitieren [MAP(AUS_EIN.map):%s]"	<switch> (P04_sicx_Allg)	{ channel="simatic:generic_device:SIC-AS04-Allg:AS04Quit", expire="1s,command=OFF" }
+Switch	P04_AS04Lampe	"Alarmlampe [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P04_sicx_Allg)	{ channel="simatic:generic_device:SIC-AS04-Allg:AS04Lampe" }

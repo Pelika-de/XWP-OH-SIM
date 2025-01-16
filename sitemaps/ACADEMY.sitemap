@@ -879,6 +879,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P01_K10FanMntnSwi
 
 			}
+			Text item=P01_AS01Lampe
+			Switch item=P01_AS01Quit
 		}
 
 	Group item=P02_sicx_io {
@@ -946,6 +948,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P02_K10FanMntnSwi
 
 			}
+			Text item=P02_AS02Lampe
+			Switch item=P02_AS02Quit
 		}
 
 	Group item=P04_sicx_io {
@@ -1013,6 +1017,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P04_K10FanMntnSwi
 
 			}
+			Text item=P04_AS04Lampe
+			Switch item=P04_AS04Quit
 		}
 
 	Group item=P06_sicx_io {
@@ -1080,6 +1086,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P06_K10FanMntnSwi
 
 			}
+			Text item=P06_AS06Lampe
+			Switch item=P06_AS06Quit
 		}
 
 	Group item=P08_sicx_io {
@@ -1147,6 +1155,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P08_K10FanMntnSwi
 
 			}
+			Text item=P08_AS08Lampe
+			Switch item=P08_AS08Quit
 		}
 
 	Group item=P10_sicx_io {
@@ -1214,6 +1224,8 @@ sitemap ACADEMY label="Academy 4.0"{
 			Switch	item=P10_K10FanMntnSwi
 
 			}
+			Text item=P10_AS10Lampe
+			Switch item=P10_AS10Quit
 		}
 	}
 	}
