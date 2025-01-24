@@ -1,6 +1,6 @@
-
-Thing simatic:generic_device:SIC-AS10-L10 "P10 - L10 - Büro" (simatic:bridge:SIC-AS10) {
+Thing simatic:generic_device:SIC-AS10 "SICX - P10AS01" (simatic:bridge:SIC-AS10) {
         Channels:
+// L10 ---------------------------------------------
 			Type chNumber: L10TOa "Aussentemperatur" [ stateAddress="DB5.DBD2F", unit="°C" ]
 			Type chNumber: L10HclTrt "Hcl - Rücklauftemperatur" [ stateAddress="DB5.DBD6F", commandAddress="DB5.DBD6F", unit="°C" ]
 			Type chNumber: L10TSu "Zulufttemperatur" [ stateAddress="DB5.DBD30F", commandAddress="DB5.DBD30F", unit="°C" ]
@@ -22,10 +22,7 @@ Thing simatic:generic_device:SIC-AS10-L10 "P10 - L10 - Büro" (simatic:bridge:SI
 
 			Type chSwitch: L10Filter1 "Filter 1" [ stateAddress="DB5.DBX95.3", commandAddress="DB5.DBX95.3" ]
 			Type chSwitch: L10Filter2 "Filter 2" [ stateAddress="DB5.DBX95.4", commandAddress="DB5.DBX95.4" ]
-    }
-
-Thing simatic:generic_device:SIC-AS10-L20 "P10 - L20 - Büro" (simatic:bridge:SIC-AS10) {
-        Channels:
+// L20 ---------------------------------------------
 			Type chNumber: L20TSu "Zulufttemperatur" [ stateAddress="DB5.DBD46F", commandAddress="DB5.DBD46F", unit="°C" ]
 
 			Type chSwitch: L20FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX96.3", commandAddress="DB5.DBX96.3" ]
@@ -40,10 +37,7 @@ Thing simatic:generic_device:SIC-AS10-L20 "P10 - L20 - Büro" (simatic:bridge:SI
 			Type chSwitch: L20HclPuMotSchutz "Hcl - Pu - Motorschutz" [ stateAddress="DB5.DBX97.6", commandAddress="DB5.DBX97.6" ]
 			Type chSwitch: L20HclPuMntnSwi "Hcl - Pu - Wartungschalter" [ stateAddress="DB5.DBX97.7", commandAddress="DB5.DBX97.7" ]
 
-    }
-
-Thing simatic:generic_device:SIC-AS10-Lxx "P10 - L30, L40, K10 - Abluft, Trafo, kühlturm" (simatic:bridge:SIC-AS10) {
-        Channels:
+// L30, L40, K10 ---------------------------------------------
 			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", commandAddress="DB5.DBD50F", unit="°C" ]
 			Type chSwitch: L30FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.2", commandAddress="DB5.DBX98.2" ]
 
@@ -58,10 +52,7 @@ Thing simatic:generic_device:SIC-AS10-Lxx "P10 - L30, L40, K10 - Abluft, Trafo, 
       Type chSwitch: K10FanLaufUe "Fan - Laufüberwachung" [ stateAddress="DB5.DBX96.4", commandAddress="DB5.DBX99.6" ]
 			Type chSwitch: K10FanMntnSwi "Fan - Wartungschalter"  [ stateAddress="DB5.DBX99.7", commandAddress="DB5.DBX99.7" ]
 
-    }
-
-Thing simatic:generic_device:SIC-AS10-Allg "P01 - Allgemein" (simatic:bridge:SIC-AS10) {
-        Channels:
-			Type chSwitch: AS10Quit "Anlagen Quitieren" [ stateAddress="DB5.DBX0.0", commandAddress="DB5.DBX0.0" ]
-			Type chSwitch: AS10Lampe "Alarm Lampe" [ stateAddress="DB5.DBX0.1" ]
+// Allgemein --------------------------------------------------
+			Type chSwitch: AllgQuit "Anlagen Quitieren" [ stateAddress="DB5.DBX0.0", commandAddress="DB5.DBX0.0" ]
+			Type chSwitch: AllgLampe "Alarm Lampe" [ stateAddress="DB5.DBX0.1" ]
 		}
