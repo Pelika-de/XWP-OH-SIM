@@ -1,5 +1,5 @@
 // Gruppen
-Group P08_err_txio "Raumautomation - Platz 08" <pxc3> (err_txio)
+Group P08_err_txio "Raumautomation - Platz 08 und 09" <pxc3> (err_txio)
 Group P08_seg1 "Segment 1" <segment> (P08_err_txio)
 Group P08_seg2 "Segment 2" <segment> (P08_err_txio)
 Group P08_seg3 "Segment 3" <segment> (P08_err_txio)

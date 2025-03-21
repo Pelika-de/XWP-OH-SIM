@@ -1,5 +1,5 @@
 // Gruppen
-Group	P04_ng_txio "TX-IOs PX NGA - Platz 04" <pxc> (ng_txio)
+Group	P04_ng_txio "TX-IOs PX NGA - Platz 04 und 05" <pxc> (ng_txio)
 
 //IOn für NGA
 // I-O Mudul 1

@@ -1,5 +1,5 @@
 // Gruppen
-Group	P10_HVAC_baugr "Baugruppen S7-HVAC - Platz 10" <s71500> (hvac_io)
+Group	P10_HVAC_baugr "Baugruppen S7-HVAC - Platz 10 und 11" <s71500> (hvac_io)
 
 //IO Adressen für HVAC
 // I-O Mudul 1
