@@ -10,9 +10,9 @@ Bridge simatic:bridge:SIC-AS08 "Bridge-SICX-AS08"  [ address="10.103.8.30", rack
 Bridge simatic:bridge:SIC-AS10 "Bridge-SICX-AS10"  [ address="10.103.10.30", rack="0", slot="2", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
 
 //bridge S7-1500 AS01 bis AS10
-Bridge simatic:bridge:HVAC-AS01 "Bridge-HVAC-AS01"  [ address="10.103.1.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
-Bridge simatic:bridge:HVAC-AS02 "Bridge-HVAC-AS02"  [ address="10.103.2.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
-Bridge simatic:bridge:HVAC-AS04 "Bridge-HVAC-AS04"  [ address="10.103.4.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
-Bridge simatic:bridge:HVAC-AS06 "Bridge-HVAC-AS06"  [ address="10.103.6.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
-Bridge simatic:bridge:HVAC-AS08 "Bridge-HVAC-AS08"  [ address="10.103.8.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
-Bridge simatic:bridge:HVAC-AS10 "Bridge-HVAC-AS10"  [ address="10.103.10.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="OP"]
+Bridge simatic:bridge:HVAC-AS01 "Bridge-HVAC-AS01"  [ address="10.103.1.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
+Bridge simatic:bridge:HVAC-AS02 "Bridge-HVAC-AS02"  [ address="10.103.2.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
+Bridge simatic:bridge:HVAC-AS04 "Bridge-HVAC-AS04"  [ address="10.103.4.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
+Bridge simatic:bridge:HVAC-AS06 "Bridge-HVAC-AS06"  [ address="10.103.6.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
+Bridge simatic:bridge:HVAC-AS08 "Bridge-HVAC-AS08"  [ address="10.103.8.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
+Bridge simatic:bridge:HVAC-AS10 "Bridge-HVAC-AS10"  [ address="10.103.10.40", rack="0", slot="1", charset="ISO-8859-1" ,pollRate="2000", communicationType="PG"]
