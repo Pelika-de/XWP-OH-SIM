@@ -1,0 +1,58 @@
+Thing simatic:generic_device:SIC-AS01 "SICX - P01AS01" (simatic:bridge:SIC-AS01) {
+        Channels:
+// L10 ---------------------------------------------
+			Type chNumber: L10TOa "Aussentemperatur" [ stateAddress="DB5.DBD2F", unit="°C" ]
+			Type chNumber: L10HclTrt "Hcl - Rücklauftemperatur" [ stateAddress="DB5.DBD6F", commandAddress="DB5.DBD6F", unit="°C" ]
+			Type chNumber: L10TSu "Zulufttemperatur" [ stateAddress="DB5.DBD30F", commandAddress="DB5.DBD30F", unit="°C" ]
+			Type chNumber: L10Tex "Ablufttemperatur" [ stateAddress="DB5.DBD34F", commandAddress="DB5.DBD34F", unit="°C" ]
+
+			Type chSwitch: L10FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX94.0", commandAddress="DB5.DBX94.0" ]
+      Type chSwitch: L10FanExLaufUe "FanEx - Laufüberwachung" [ stateAddress="DB5.DBX94.1", commandAddress="DB5.DBX94.1" ]
+			Type chSwitch: L10FanExMntnSwi "FanEx - Wartungschalter"  [ stateAddress="DB5.DBX94.2", commandAddress="DB5.DBX94.2" ]
+			Type chSwitch: L10FanExFern "FanEx - Fern" [ stateAddress="DB5.DBX94.3", commandAddress="DB5.DBX94.3" ]
+
+			Type chSwitch: L10FanSuMotSchutz "FanSu - Motorschutz" [ stateAddress="DB5.DBX95.5", commandAddress="DB5.DBX95.5" ]
+      Type chSwitch: L10FanSuLaufUe "FanSu - Laufüberwachung" [ stateAddress="DB5.DBX95.6", commandAddress="DB5.DBX95.6" ]
+			Type chSwitch: L10FanSuMntnSwi "FanSu - Wartungschalter" [ stateAddress="DB5.DBX95.7", commandAddress="DB5.DBX95.7" ]
+			Type chSwitch: L10FanSuFern "FanSu - Fern" [ stateAddress="DB5.DBX96.0", commandAddress="DB5.DBX96.0" ]
+
+			Type chSwitch: L10HclFrost "Hcl - Frostschutz"  [ stateAddress="DB5.DBX94.6", commandAddress="DB5.DBX94.6" ]
+			Type chSwitch: L10HclPuMotSchutz "Hcl - Pu - Motorschutz" [ stateAddress="DB5.DBX94.7", commandAddress="DB5.DBX94.7" ]
+			Type chSwitch: L10HclPuMntnSwi "Hcl - Pu - Wartungschalter" [ stateAddress="DB5.DBX95.0", commandAddress="DB5.DBX95.0" ]
+
+			Type chSwitch: L10Filter1 "Filter 1" [ stateAddress="DB5.DBX95.3", commandAddress="DB5.DBX95.3" ]
+			Type chSwitch: L10Filter2 "Filter 2" [ stateAddress="DB5.DBX95.4", commandAddress="DB5.DBX95.4" ]
+// L20 ---------------------------------------------
+			Type chNumber: L20TSu "Zulufttemperatur" [ stateAddress="DB5.DBD46F", commandAddress="DB5.DBD46F", unit="°C" ]
+
+			Type chSwitch: L20FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX96.3", commandAddress="DB5.DBX96.3" ]
+      Type chSwitch: L20FanExLaufUe "FanEx - Laufüberwachung" [ stateAddress="DB5.DBX96.4", commandAddress="DB5.DBX96.4" ]
+			Type chSwitch: L20FanExMntnSwi "FanEx - Wartungschalter"  [ stateAddress="DB5.DBX96.5", commandAddress="DB5.DBX96.5" ]
+
+			Type chSwitch: L20FanSuMotSchutz "FanSu - Motorschutz" [ stateAddress="DB5.DBX97.0", commandAddress="DB5.DBX97.0" ]
+      Type chSwitch: L20FanSuLaufUe "FanSu - Laufüberwachung" [ stateAddress="DB5.DBX97.1", commandAddress="DB5.DBX97.1" ]
+			Type chSwitch: L20FanSuMntnSwi "FanSu - Wartungschalter" [ stateAddress="DB5.DBX97.2", commandAddress="DB5.DBX97.2" ]
+
+			Type chSwitch: L20HclFrost "Hcl - Frostschutz"  [ stateAddress="DB5.DBX97.5", commandAddress="DB5.DBX97.5" ]
+			Type chSwitch: L20HclPuMotSchutz "Hcl - Pu - Motorschutz" [ stateAddress="DB5.DBX97.6", commandAddress="DB5.DBX97.6" ]
+			Type chSwitch: L20HclPuMntnSwi "Hcl - Pu - Wartungschalter" [ stateAddress="DB5.DBX97.7", commandAddress="DB5.DBX97.7" ]
+
+// L30, L40, K10 ---------------------------------------------
+			Type chNumber: L30TSu "Zulufttemperatur" [ stateAddress="DB5.DBD50F", commandAddress="DB5.DBD50F", unit="°C" ]
+			Type chSwitch: L30FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.2", commandAddress="DB5.DBX98.2" ]
+
+			Type chNumber: L40Temp "Temperatur" [ stateAddress="DB5.DBD54F", commandAddress="DB5.DBD54F", unit="°C" ]
+			Type chSwitch: L40FanExMotSchutz "FanEx - Motorschutz" [ stateAddress="DB5.DBX98.5", commandAddress="DB5.DBX98.5" ]
+
+			Type chNumber: K10WTemp "Wassertemperatur" [ stateAddress="DB5.DBD58F", commandAddress="DB5.DBD58F", unit="°C" ]
+			Type chSwitch: K10PuMotSchutz "Pu - Motorschutz" [ stateAddress="DB5.DBX99.0", commandAddress="DB5.DBX99.0" ]
+			Type chSwitch: K10PuMntnSwi "Pu - Wartungschalter" [ stateAddress="DB5.DBX99.1", commandAddress="DB5.DBX99.1" ]
+			Type chSwitch: K10PuMWDet "Pu - Trockenlaufschutz" [ stateAddress="DB5.DBX99.2", commandAddress="DB5.DBX99.2" ]
+			Type chSwitch: K10FanMotSchutz "Fan - Motorschutz" [ stateAddress="DB5.DBX99.5", commandAddress="DB5.DBX99.5" ]
+      Type chSwitch: K10FanLaufUe "Fan - Laufüberwachung" [ stateAddress="DB5.DBX96.4", commandAddress="DB5.DBX99.6" ]
+			Type chSwitch: K10FanMntnSwi "Fan - Wartungschalter"  [ stateAddress="DB5.DBX99.7", commandAddress="DB5.DBX99.7" ]
+
+// Allgemein --------------------------------------------------
+			Type chSwitch: AllgQuit "Anlagen Quitieren" [ stateAddress="DB5.DBX0.0", commandAddress="DB5.DBX0.0" ]
+			Type chSwitch: AllgLampe "Alarm Lampe" [ stateAddress="DB5.DBX0.1" ]
+		}

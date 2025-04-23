@@ -1,0 +1,82 @@
+/* übergeordnete Gruppen */
+Group pxc "PXC-Classic" <pxc>
+Group gen2 "PXC-Gen2" <pxc>
+Group err "DRA-Raumautomation" <pxc3>
+Group sicx "Siclimat" <sicx>
+Group hvac "S7-HVAC" <s71500>
+
+/* Gruppen aus Items */
+Group px_txio "TX-IOs für PX Classic ( Vertriebsbüro Nord/Süd )" <pxc> (pxc)  // gruppe für Items aus PXC
+Group ng_txio "TX-IOs für PXC NGA    ( Niederlassung )" <pxc> (gen2) // gruppe für Items aus NGA
+Group err_txio "IOs für ERR    ( Niederlassung )" <pxc3> (err) // gruppe für Items aus ERR
+Group sicx_io "IOs für Siclimat ( Werkhalle )" <sicx> (sicx) // gruppe für Items aus Siclimat
+Group hvac_io "IOs für S7-HVAC ( Vertriebsbüro Ost/West)" <s71500> (hvac) // gruppe für Items aus Siclimat
+
+/* Gruppe Arbeitsplatz */
+Group:Switch:AND(ON, OFF) WatchDog "Watch Dog [MAP(On_Offline.map):%s]" <pxc> (pxc)
+Group:Switch:AND(ON, OFF) P01_WatchDog "Watch Dog 01 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+Group:Switch:AND(ON, OFF) P02_WatchDog "Watch Dog 02 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+Group:Switch:AND(ON, OFF) P04_WatchDog "Watch Dog 04 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+Group:Switch:AND(ON, OFF) P06_WatchDog "Watch Dog 06 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+Group:Switch:AND(ON, OFF) P08_WatchDog "Watch Dog 08 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+Group:Switch:AND(ON, OFF) P10_WatchDog "Watch Dog 10 [MAP(On_Offline.map):%s]" <pxc> (WatchDog)
+
+// Watch Dog PX 01
+Switch	PX_P01AS01	"LifeSign PX 01AS01 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_AS01" }
+Switch	PX_P01AS02	"LifeSign PX 01AS02 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_AS02" }
+Switch	PX_P01OHPX	"LifeSign PX 01OHPX [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:WD_OHPX" }
+
+// Watch Dog NG 01
+Switch	NG_P01AS01	"LifeSign NG 01AS01 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_AS01" }
+Switch	NG_P01AS02	"LifeSign NG 01AS02 [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_AS02" }
+Switch	NG_P01OHNG	"LifeSign NG 01OHNG [MAP(On_Offline.map):%s]"	<network> (P01_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:WD_OHNG" }
+
+// Watch Dog PX 02
+Switch	PX_P02AS01	"LifeSign PX 02AS01 [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:WD_AS01" }
+Switch	PX_P02AS02	"LifeSign PX 02AS02 [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:WD_AS02" }
+Switch	PX_P02OHPX	"LifeSign PX 02OHPX [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:WD_OHPX" }
+
+// Watch Dog NG 02
+Switch	NG_P02AS01	"LifeSign NG 02AS01 [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHNG:WD_AS01" }
+Switch	NG_P02AS02	"LifeSign NG 02AS02 [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHNG:WD_AS02" }
+Switch	NG_P02OHNG	"LifeSign NG 02OHNG [MAP(On_Offline.map):%s]"	<network> (P02_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHNG:WD_OHNG" }
+
+// Watch Dog PX 04
+Switch	PX_P04AS01	"LifeSign PX 04AS01 [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHPX:WD_AS01" }
+Switch	PX_P04AS02	"LifeSign PX 04AS02 [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHPX:WD_AS02" }
+Switch	PX_P04OHPX	"LifeSign PX 04OHPX [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHPX:WD_OHPX" }
+
+// Watch Dog NG 04
+Switch	NG_P04AS01	"LifeSign NG 04AS01 [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHNG:WD_AS01" }
+Switch	NG_P04AS02	"LifeSign NG 04AS02 [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHNG:WD_AS02" }
+Switch	NG_P04OHNG	"LifeSign NG 04OHNG [MAP(On_Offline.map):%s]"	<network> (P04_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP04_04OHNG:WD_OHNG" }
+
+// Watch Dog PX 06
+Switch	PX_P06AS01	"LifeSign PX 06AS01 [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHPX:WD_AS01" }
+Switch	PX_P06AS02	"LifeSign PX 06AS02 [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHPX:WD_AS02" }
+Switch	PX_P06OHPX	"LifeSign PX 06OHPX [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHPX:WD_OHPX" }
+
+// Watch Dog NG 06
+Switch	NG_P06AS01	"LifeSign NG 06AS01 [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:WD_AS01" }
+Switch	NG_P06AS02	"LifeSign NG 06AS02 [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:WD_AS02" }
+Switch	NG_P06OHNG	"LifeSign NG 06OHNG [MAP(On_Offline.map):%s]"	<network> (P06_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:WD_OHNG" }
+
+// Watch Dog PX 08
+Switch	PX_P08AS01	"LifeSign PX 08AS01 [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHPX:WD_AS01" }
+Switch	PX_P08AS02	"LifeSign PX 08AS02 [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHPX:WD_AS02" }
+Switch	PX_P08OHPX	"LifeSign PX 08OHPX [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHPX:WD_OHPX" }
+
+// Watch Dog NG 08
+Switch	NG_P08AS01	"LifeSign NG 08AS01 [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:WD_AS01" }
+Switch	NG_P08AS02	"LifeSign NG 08AS02 [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:WD_AS02" }
+Switch	NG_P08OHNG	"LifeSign NG 08OHNG [MAP(On_Offline.map):%s]"	<network> (P08_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP08_08OHNG:WD_OHNG" }
+
+// Watch Dog PX 10
+Switch	PX_P10AS01	"LifeSign PX 10AS01 [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHPX:WD_AS01" }
+Switch	PX_P10AS02	"LifeSign PX 10AS02 [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHPX:WD_AS02" }
+Switch	PX_P10OHPX	"LifeSign PX 10OHPX [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHPX:WD_OHPX" }
+
+// Watch Dog NG 10
+Switch	NG_P10AS01	"LifeSign NG 10AS01 [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHNG:WD_AS01" }
+Switch	NG_P10AS02	"LifeSign NG 10AS02 [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHNG:WD_AS02" }
+Switch	NG_P10OHNG	"LifeSign NG 10OHNG [MAP(On_Offline.map):%s]"	<network> (P10_WatchDog)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP10_10OHNG:WD_OHNG" }
