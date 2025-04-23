@@ -1,4 +1,4 @@
-Thing simatic:generic_device:HVAC-AS02:TXIO "P02 - P02AS01 - TXIO" (simatic:bridge:HVAC-AS02) {
+Thing simatic:generic_device:HVAC-AS01:TXIO "P01 - P01AS01 - TXIO" (simatic:bridge:HVAC-AS01) {
         Channels:
 
 			Type chNumber: HVAC_IO_1_1 "TXIO Analog Eingang" [ stateAddress="DB2.DBD0F", commandAddress="DB2.DBD0F", unit="°C" ]
