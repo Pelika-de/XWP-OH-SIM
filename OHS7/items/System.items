@@ -1,0 +1,7 @@
+/* übergeordnete Gruppen */
+Group sicx "Siclimat" <sicx>
+Group hvac "S7-HVAC" <s71500>
+
+/* Gruppen aus Items */
+Group sicx_io "IOs für Siclimat ( Werkhalle )" <sicx> (sicx) // gruppe für Items aus Siclimat
+Group hvac_io "IOs für S7-HVAC ( Vertriebsbüro Ost/West)" <s71500> (hvac) // gruppe für Items aus Siclimat
