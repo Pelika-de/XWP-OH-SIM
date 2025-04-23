@@ -1,8 +1,0 @@
-OFF=Geschlossen
-ON=Offen
-0=Geschlossen
-1=Offen
-0.0=Geschlossen
-1.0=Offen
--=N.A.
-NULL=nicht Definiert
