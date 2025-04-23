@@ -1,0 +1,59 @@
+Thing co7io-bacnet:ip-device:BAC4:SIMP10_10OHPX "SIMP10:10OHPX" (co7io-bacnet:ipv4:BAC4) [discoverChannels="false", address="10.113.10.14", instance="41014", port="47812", refreshInterval="10000",  discoverObjects="false", network="0"] {
+ Channels:
+
+ //WachtDog aus PX Sim
+  Type deviceWriteableBoolean : WD_AS01 "TXIO Binär Ausgang" [	readOnly="false",    instance="34",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_AS02 "TXIO Binär Ausgang" [	readOnly="false",    instance="35",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : WD_OHPX "TXIO Binär Ausgang" [	readOnly="false",    instance="33",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+ //IO Adressen für PX
+  Type deviceWriteableNumber : PX_IO_1_1 "TXIO Analog Eingang" [	readOnly="false",    instance="1",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_2 "TXIO Analog Eingang" [	readOnly="false",    instance="2",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_3 "TXIO Analog Eingang" [	readOnly="false",    instance="3",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_4 "TXIO Analog Eingang" [	readOnly="false",    instance="4",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_5 "TXIO Analog Eingang" [	readOnly="false",    instance="5",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_6 "TXIO Analog Eingang" [	readOnly="false",    instance="6",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_7 "TXIO Analog Eingang" [	readOnly="false",    instance="7",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_1_8 "TXIO Analog Eingang" [	readOnly="false",    instance="8",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+  Type deviceWriteableNumber : PX_IO_2_1 "TXIO Analog Eingang" [	readOnly="false",    instance="9",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_2 "TXIO Analog Eingang" [	readOnly="false",    instance="10",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_3 "TXIO Analog Eingang" [	readOnly="false",    instance="11",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_4 "TXIO Analog Eingang" [	readOnly="false",    instance="12",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_5 "TXIO Analog Eingang" [	readOnly="false",    instance="13",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_6 "TXIO Analog Eingang" [	readOnly="false",    instance="14",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_7 "TXIO Analog Eingang" [	readOnly="false",    instance="15",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableNumber : PX_IO_2_8 "TXIO Analog Eingang" [	readOnly="false",    instance="16",    type="ANALOG_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+  Type deviceWriteableBoolean : PX_IO_3_1 "TXIO Binär Eingang" [	readOnly="false",    instance="1",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_2 "TXIO Binär Eingang" [	readOnly="false",    instance="2",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_3 "TXIO Binär Eingang" [	readOnly="false",    instance="3",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_4 "TXIO Binär Eingang" [	readOnly="false",    instance="4",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_5 "TXIO Binär Eingang" [	readOnly="false",    instance="5",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_6 "TXIO Binär Eingang" [	readOnly="false",    instance="6",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_7 "TXIO Binär Eingang" [	readOnly="false",    instance="7",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_3_8 "TXIO Binär Eingang" [	readOnly="false",    instance="8",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+  Type deviceWriteableBoolean : PX_IO_4_1 "TXIO Binär Eingang" [	readOnly="false",    instance="9",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_2 "TXIO Binär Eingang" [	readOnly="false",    instance="10",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_3 "TXIO Binär Eingang" [	readOnly="false",    instance="11",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_4 "TXIO Binär Eingang" [	readOnly="false",    instance="12",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_5 "TXIO Binär Eingang" [	readOnly="false",    instance="13",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_6 "TXIO Binär Eingang" [	readOnly="false",    instance="14",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_7 "TXIO Binär Eingang" [	readOnly="false",    instance="15",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_4_8 "TXIO Binär Eingang" [	readOnly="false",    instance="16",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+  Type deviceWriteableBoolean : PX_IO_5_1 "TXIO Binär Ausgang" [	readOnly="false",    instance="17",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_5_2 "TXIO Binär Ausgang" [	readOnly="false",    instance="18",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_5_3 "TXIO Binär Ausgang" [	readOnly="false",    instance="19",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_5_4 "TXIO Binär Ausgang" [	readOnly="false",    instance="20",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_5_5 "TXIO Binär Ausgang" [	readOnly="false",    instance="21",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_5_6 "TXIO Binär Ausgang" [	readOnly="false",    instance="22",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
+  Type deviceWriteableBoolean : PX_IO_6_1 "TXIO Binär Ausgang" [	readOnly="false",    instance="25",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_6_2 "TXIO Binär Ausgang" [	readOnly="false",    instance="26",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_6_3 "TXIO Binär Ausgang" [	readOnly="false",    instance="27",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_6_4 "TXIO Binär Ausgang" [	readOnly="false",    instance="28",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_6_5 "TXIO Binär Ausgang" [	readOnly="false",    instance="29",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+  Type deviceWriteableBoolean : PX_IO_6_6 "TXIO Binär Ausgang" [	readOnly="false",    instance="30",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+}

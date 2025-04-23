@@ -1,0 +1,5 @@
+//Bridge für BACnet port 47812 Instanz 471199
+Bridge co7io-bacnet:ipv4:BAC4 "Bridge-BACnet-BAC4"  [localDeviceId="471199", port="47812", refreshInterval="10000", localNetworkNumber="0", localBindAddress="10.114.0.99", broadcastAddress="10.114.255.255"]
+
+//Bridge für Remote OHS7
+Bridge remoteopenhab:server:ohs7 "Remote openHAB Server Simatic S7" [ host="10.103.0.99", port=8080, useHttps=false, trustedCertificate=true, username="admin", password="qpow13"]
