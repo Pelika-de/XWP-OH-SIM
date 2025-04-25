@@ -1,0 +1,282 @@
+sitemap ACADEMY label="Academy 4.0"{
+  Frame label="Academy 4.0" {
+	Group item=Memory_Used_Percent icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
+        Text label="Network Information" item=Network_AdapterName{
+			Default item=Network_AdapterName
+			Default item=Network_Name
+			//Default item=Network_IP 
+			Default item=Network_Mac
+			}
+		Text label="Memory Information" item=Memory_Used_Percent valuecolor=[ > 70="red", <70="Green", < 15="blue"]{
+			Default item=Memory_Available
+			Default item=Memory_Used
+			Default item=Memory_Total
+			Default item=Memory_Available_Percent
+			Default item=Memory_Used_Percent labelcolor=[ > 70="red", <70="Green", < 15="blue"] valuecolor=[ > 70="red", <70="Green", < 15="blue"]
+			}
+		}
+	}
+	Frame label="BACnet Devices Platz 01 bis Platz 06"{
+	Group item=txio {
+	Group item=P01_txio label="BACnet Device Platz 01" {	
+		Group item=P01_AI {
+			Slider item=P01_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P01_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P01_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P01_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P01_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P01_BI {
+			Switch item=P01_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P01_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P01_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P01_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P01_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P01_BO {
+			Text item=P01_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P01_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P01_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P01_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P01_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P02_txio label="BACnet Device Platz 02" {	
+		Group item=P02_AI {
+			Slider item=P02_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P02_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P02_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P02_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P02_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P02_BI {
+			Switch item=P02_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P02_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P02_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P02_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P02_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P02_BO {
+			Text item=P02_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P02_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P02_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P02_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P02_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P03_txio label="BACnet Device Platz 03" {	
+		Group item=P03_AI {
+			Slider item=P03_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P03_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P03_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P03_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P03_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P03_BI {
+			Switch item=P03_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P03_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P03_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P03_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P03_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P03_BO {
+			Text item=P03_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P03_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P03_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P03_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P03_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P04_txio label="BACnet Device Platz 04" {	
+		Group item=P04_AI {
+			Slider item=P04_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P04_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P04_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P04_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P04_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P04_BI {
+			Switch item=P04_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P04_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P04_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P04_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P04_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P04_BO {
+			Text item=P04_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P04_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P04_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P04_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P04_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P05_txio label="BACnet Device Platz 05" {	
+		Group item=P05_AI {
+			Slider item=P05_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P05_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P05_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P05_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P05_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P05_BI {
+			Switch item=P05_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P05_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P05_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P05_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P05_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P05_BO {
+			Text item=P05_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P05_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P05_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P05_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P05_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P06_txio label="BACnet Device Platz 06" {	
+		Group item=P06_AI {
+			Slider item=P06_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P06_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P06_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P06_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P06_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P06_BI {
+			Switch item=P06_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P06_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P06_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P06_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P06_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P06_BO {
+			Text item=P06_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P06_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P06_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P06_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P06_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	}
+}
+	Frame label="BACnet Devices Platz 07 bis Platz 11"{
+	Group item=txio {
+	Group item=P07_txio label="BACnet Device Platz 07" {	
+		Group item=P07_AI {
+			Slider item=P07_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P07_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P07_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P07_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P07_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P07_BI {
+			Switch item=P07_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P07_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P07_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P07_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P07_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P07_BO {
+			Text item=P07_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P07_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P07_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P07_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P07_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P08_txio label="BACnet Device Platz 08" {	
+		Group item=P08_AI {
+			Slider item=P08_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P08_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P08_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P08_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P08_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P08_BI {
+			Switch item=P08_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P08_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P08_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P08_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P08_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P08_BO {
+			Text item=P08_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P08_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P08_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P08_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P08_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P09_txio label="BACnet Device Platz 09" {	
+		Group item=P09_AI {
+			Slider item=P09_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P09_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P09_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P09_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P09_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P09_BI {
+			Switch item=P09_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P09_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P09_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P09_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P09_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P09_BO {
+			Text item=P09_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P09_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P09_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P09_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P09_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P10_txio label="BACnet Device Platz 10" {	
+		Group item=P10_AI {
+			Slider item=P10_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P10_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P10_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P10_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P10_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P10_BI {
+			Switch item=P10_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P10_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P10_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P10_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P10_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P10_BO {
+			Text item=P10_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P10_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P10_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P10_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P10_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+	Group item=P11_txio label="BACnet Device Platz 11" {	
+		Group item=P11_AI {
+			Slider item=P11_AI_1 minValue=10 maxValue=50 step=0.5
+			Slider item=P11_AI_2 minValue=10 maxValue=50 step=0.5
+			Slider item=P11_AI_3 minValue=00 maxValue=20 step=0.5 
+			Slider item=P11_AI_4 minValue=0 maxValue=30 step=0.5
+			Slider item=P11_AI_5 minValue=0 maxValue=250 step=0.5
+			}
+		Group item=P11_BI {
+			Switch item=P11_BI_1 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P11_BI_2 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P11_BI_3 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P11_BI_4 valuecolor=[OFF="green", ON="RED"]
+			Switch item=P11_BI_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		Group item=P11_BO {
+			Text item=P11_BO_1 valuecolor=[OFF="green", ON="RED"]
+			Text item=P11_BO_2 valuecolor=[OFF="green", ON="RED"]
+			Text item=P11_BO_3 valuecolor=[OFF="green", ON="RED"]
+			Text item=P11_BO_4 valuecolor=[OFF="green", ON="RED"]
+			Text item=P11_BO_5 valuecolor=[OFF="green", ON="RED"]
+			}
+		}
+
+	}
+}
+}
+  

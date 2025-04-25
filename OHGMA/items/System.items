@@ -1,0 +1,25 @@
+/* Memory information*/
+Number Memory_Available           "Memory Available"           <heating>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:memory#available" }
+Number Memory_Used                "Memory Used"                <heating>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:memory#used" }
+Number Memory_Total               "Memory Total"               <heating>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:memory#total" }
+Number Memory_Available_Percent   "Memory Available (%)"       <heating>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:memory#availablePercent" }
+Number Memory_Used_Percent        "Memory Used (%)"            <heating>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:memory#usedPercent" }
+
+/* CPU information*/
+String CPU_Name                   "Name"                <shield>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#name" }
+String CPU_Description            "Description"         <shield>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#description" }
+Number CPU_Load1                  "Load (1 min)"        <line>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#load1" }
+Number CPU_Load5                  "Load (5 min)"        <line>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#load5" }
+Number CPU_Load15                 "Load (15 min)"       <line>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#load15" }
+Number CPU_Threads                "Threads"             <qualityofservice>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#threads" }
+Number CPU_Uptime                 "Uptime"              <time>           { channel="systeminfo:computer:ACAD-XWPS03-SRV:cpu#uptime" }
+
+/* Network information*/
+String Network_AdapterName        "Adapter name"        <network>        { channel="systeminfo:computer:ACAD-XWPS03-SRV:network#networkDisplayName" }
+String Network_Name               "Name"                <network>        { channel="systeminfo:computer:ACAD-XWPS03-SRV:network#networkName" }
+String Network_IP                 "IP address"          <network>        { channel="systeminfo:computer:ACAD-XWPS03-SRV:network#ip" }
+String Network_Mac                "Mac address"         <network>        { channel="systeminfo:computer:ACAD-XWPS03-SRV:network#mac" }
+
+
+/* übergeordnete Gruppen */
+Group	txio "BACnet Objekte" <pxc>

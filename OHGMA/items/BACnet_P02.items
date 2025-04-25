@@ -1,0 +1,25 @@
+Group	P02_txio	"BACnet Objekte" <pxc> (txio)
+
+// I-O Mudul 1
+Group P02_AI "IO type Analog Eingänge" <8u> (P02_txio)
+Number	P02_AI_1	"Temperatur BMZ [%.1f °C]"	<temperature> (P02_Modul_1)	{ bacnet="device=4253,type=analogValue,id=6" }
+Number	P02_AI_2	"Temperatur Gehäuse [%.1f °C]"	<temperature> (P02_Modul_1)	{ bacnet="device=4253,type=analogValue,id=7" }
+Number	P02_AI_3	"Batterie Spannung 12V [%.1f V]"	<my_battery> (P02_Modul_1)	{ bacnet="device=4253,type=analogValue,id=8" }
+Number	P02_AI_4	"Batterie Spannung 24V [%.1f V]"	<my_battery> (P02_Modul_1)	{ bacnet="device=4253,type=analogValue,id=9" }
+Number	P02_AI_5	"Netz Spannung 230V [%.1f V]"	<poweroutlet> (P02_Modul_1)	{ bacnet="device=4253,type=analogValue,id=10" }
+
+// I-O Mudul 3
+Group P02_BI "IO type Binäre Eingänge" <8d> (P02_txio) 
+Switch	P02_BI_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=11" }
+Switch	P02_BI_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=12" }
+Switch	P02_BI_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=13" }
+Switch	P02_BI_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=14" }
+Switch	P02_BI_5	"MG 1 Abschalten [MAP(Nein_Ja.map):%s]"	<energy> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=15" }
+
+// I-O Mudul 3
+Group P02_BO"IO type Binäre Ausgänge" <6r> (P02_txio) 
+Switch	P02_BO_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=16" }
+Switch	P02_BO_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=17" }
+Switch	P02_BO_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=18" }
+Switch	P02_BO_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=19" }
+Switch	P02_BO_5	"MG 1 Abgeschaltet [MAP(Nein_Ja.map):%s]"	<energy> (P02_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=20" }

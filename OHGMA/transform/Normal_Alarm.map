@@ -1,0 +1,8 @@
+OFF=Normal
+ON=Alarm
+0=Normal
+1=Alarm
+0.0=Normal
+1.0=Alarm
+-=N.A.
+NULL=nicht Definiert
