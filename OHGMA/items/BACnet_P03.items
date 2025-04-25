@@ -2,24 +2,24 @@ Group	P03_txio	"BACnet Objekte" <pxc> (txio)
 
 // I-O Mudul 1
 Group P03_AI "IO type Analog Eingänge" <8u> (P03_txio)
-Number	P03_AI_1	"Temperatur BMZ [%.1f °C]"	<temperature> (P03_Modul_1)	{ bacnet="device=4253,type=analogValue,id=11" }
-Number	P03_AI_2	"Temperatur Gehäuse [%.1f °C]"	<temperature> (P03_Modul_1)	{ bacnet="device=4253,type=analogValue,id=12" }
-Number	P03_AI_3	"Batterie Spannung 12V [%.1f V]"	<my_battery> (P03_Modul_1)	{ bacnet="device=4253,type=analogValue,id=13" }
-Number	P03_AI_4	"Batterie Spannung 24V [%.1f V]"	<my_battery> (P03_Modul_1)	{ bacnet="device=4253,type=analogValue,id=14" }
-Number	P03_AI_5	"Netz Spannung 230V [%.1f V]"	<poweroutlet> (P03_Modul_1)	{ bacnet="device=4253,type=analogValue,id=15" }
+Number	P03_AI_1	"Temperatur BMZ [%.1f °C]"	<temperature> (P03_Modul_1)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_AI_1" }
+Number	P03_AI_2	"Temperatur Gehäuse [%.1f °C]"	<temperature> (P03_Modul_1)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_AI_2" }
+Number	P03_AI_3	"Batterie Spannung 12V [%.1f V]"	<my_battery> (P03_Modul_1)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_AI_3" }
+Number	P03_AI_4	"Batterie Spannung 24V [%.1f V]"	<my_battery> (P03_Modul_1)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_AI_4" }
+Number	P03_AI_5	"Netz Spannung 230V [%.1f V]"	<poweroutlet> (P03_Modul_1)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_AI_5" }
 
 // I-O Mudul 3
 Group P03_BI "IO type Binäre Eingänge" <8d> (P03_txio) 
-Switch	P03_BI_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=21" }
-Switch	P03_BI_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=22" }
-Switch	P03_BI_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=23" }
-Switch	P03_BI_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=24" }
-Switch	P03_BI_5	"MG 1 Abschalten [MAP(Nein_Ja.map):%s]"	<energy> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=25" }
+Switch	P03_BI_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BI_1" }
+Switch	P03_BI_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BI_2" }
+Switch	P03_BI_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BI_3" }
+Switch	P03_BI_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BI_4" }
+Switch	P03_BI_5	"MG 1 Abschalten [MAP(Nein_Ja.map):%s]"	<energy> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BI_5" }
 
 // I-O Mudul 3
 Group P03_BO"IO type Binäre Ausgänge" <6r> (P03_txio) 
-Switch	P03_BO_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=26" }
-Switch	P03_BO_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=27" }
-Switch	P03_BO_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=28" }
-Switch	P03_BO_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=29" }
-Switch	P03_BO_5	"MG 1 Abgeschaltet [MAP(Nein_Ja.map):%s]"	<energy> (P03_Modul_3)	{ bacnet="device=4253,type=binaryValue,id=30" }
+Switch	P03_BO_1	"MG 1 Alarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BO_1" }
+Switch	P03_BO_2	"MG 1 Meldung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BO_2" }
+Switch	P03_BO_3	"MG 1 Störung [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BO_3" }
+Switch	P03_BO_4	"MG 1 Voralarm [MAP(Normal_Alarm.map):%s]"	<alarm_invers> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BO_4" }
+Switch	P03_BO_5	"MG 1 Abgeschaltet [MAP(Nein_Ja.map):%s]"	<energy> (P03_Modul_3)	{ channel="co7io-bacnet:ip-device:BACB:SIMAS:P03_BO_5" }

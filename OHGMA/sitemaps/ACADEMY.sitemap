@@ -1,21 +1,4 @@
 sitemap ACADEMY label="Academy 4.0"{
-  Frame label="Academy 4.0" {
-	Group item=Memory_Used_Percent icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
-        Text label="Network Information" item=Network_AdapterName{
-			Default item=Network_AdapterName
-			Default item=Network_Name
-			//Default item=Network_IP 
-			Default item=Network_Mac
-			}
-		Text label="Memory Information" item=Memory_Used_Percent valuecolor=[ > 70="red", <70="Green", < 15="blue"]{
-			Default item=Memory_Available
-			Default item=Memory_Used
-			Default item=Memory_Total
-			Default item=Memory_Available_Percent
-			Default item=Memory_Used_Percent labelcolor=[ > 70="red", <70="Green", < 15="blue"] valuecolor=[ > 70="red", <70="Green", < 15="blue"]
-			}
-		}
-	}
 	Frame label="BACnet Devices Platz 01 bis Platz 06"{
 	Group item=txio {
 	Group item=P01_txio label="BACnet Device Platz 01" {	

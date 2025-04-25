@@ -1,0 +1,2 @@
+//Bridge für BACnet port 47819 Instanz 471199
+Bridge co7io-bacnet:ipv4:BACB "Bridge-BACnet-BACB"  [localDeviceId="471199", port="47819", refreshInterval="10000", localNetworkNumber="0", localBindAddress="10.105.0.99", broadcastAddress="10.105.255.255"]
