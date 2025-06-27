@@ -1,4 +1,4 @@
-sitemap ACADEMY label="Academy 4.0"{
+sitemap ACADEMY label="Academy 4.0 - S7 Simulation"{
 
 	Frame label="Siclimat" {
 	Group item=sicx_io {

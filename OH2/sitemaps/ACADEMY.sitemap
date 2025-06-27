@@ -1,4 +1,4 @@
-sitemap ACADEMY label="Academy 4.0"{
+sitemap ACADEMY label="Academy 4.0 - Virtuell 2"{
 /*  Frame label="Academy 4.0" {
 	Group item=WatchDog icon="status"  labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {
 		Text label="Überwachung Simulation Platz 01" item=P01_WatchDog labelcolor=[OFF="Red"] valuecolor=[ON="Green", OFF="Red"] {

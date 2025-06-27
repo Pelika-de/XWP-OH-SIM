@@ -1,4 +1,4 @@
-sitemap ACADEMY label="Academy 4.0"{
+sitemap ACADEMY label="Academy 4.0 - GMA Simulation"{
 	Frame label="BACnet Devices Platz 01 bis Platz 06"{
 	Group item=txio {
 	Group item=P01_txio label="BACnet Device Platz 01" {	
