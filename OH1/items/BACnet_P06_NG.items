@@ -45,3 +45,9 @@ Switch	P06_IO_NG_Adresse_4_5	"IO 4.5 L01 Abluftventilator TK [MAP(Normal_Alarm_R
 Switch	P06_IO_NG_Adresse_4_6	"IO 4.6 Heizung Gasmelder [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P06_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_IO_4_6" }
 Switch	P06_IO_NG_Adresse_4_7	"IO 4.7 Nicht belegt [MAP(AUS_EIN.map):%s]"	<switch> (P06_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_IO_4_7" }
 Switch	P06_IO_NG_Adresse_4_8	"IO 4.8 Heizung Sicherheitstemperatur Begrenzer [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P06_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_IO_4_8" }
+
+//AI Adressen für DES-B Seminare
+Group P06_Sim_NG_DES_B "Störungen für Simulation CC-DES-B - P06" <8d> (des_b)
+Switch	P06_Sim_NG_Adresse_1	"Simulation - L01 ThOvrld [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P06_Sim_NG_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_SIM_ER1" }
+Switch	P06_Sim_NG_Adresse_2	"Simulation - L04 Dstb [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P06_Sim_NG_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_SIM_ER2" }
+Switch	P06_Sim_NG_Adresse_3	"Simulation - L04 ThOvrld [MAP(Normal_Alarm_Revers.map):%s]" <alarm_invers> (P06_Sim_NG_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP06_06OHNG:NG_SIM_ER3" }

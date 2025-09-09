@@ -321,8 +321,40 @@ sitemap ACADEMY label="Academy 4.0 - Virtuell 2"{
 			Switch item=P10_IO_PX_Adresse_4_8
 			}
 		}
-
+Group item=des_b {
+Group item=P01_Sim_PX_DES_B {
+		Switch item=P01_Sim_PX_Adresse_1
+		Switch item=P01_Sim_PX_Adresse_2
+		Switch item=P01_Sim_PX_Adresse_3
+		}
+	Group item=P02_Sim_PX_DES_B {
+		Switch item=P02_Sim_PX_Adresse_1
+		Switch item=P02_Sim_PX_Adresse_2
+		Switch item=P02_Sim_PX_Adresse_3
+		}
+	Group item=P04_Sim_PX_DES_B {
+		Switch item=P04_Sim_PX_Adresse_1
+		Switch item=P04_Sim_PX_Adresse_2
+		Switch item=P04_Sim_PX_Adresse_3
+	}
+	Group item=P06_Sim_PX_DES_B {
+		Switch item=P06_Sim_PX_Adresse_1
+		Switch item=P06_Sim_PX_Adresse_2
+		Switch item=P06_Sim_PX_Adresse_3
+	}
+	Group item=P08_Sim_PX_DES_B {
+		Switch item=P08_Sim_PX_Adresse_1
+		Switch item=P08_Sim_PX_Adresse_2
+		Switch item=P08_Sim_PX_Adresse_3
+	}
+	Group item=P10_Sim_PX_DES_B {
+		Switch item=P10_Sim_PX_Adresse_1
+		Switch item=P10_Sim_PX_Adresse_2
+		Switch item=P10_Sim_PX_Adresse_3
+	}
+}
 		}	// ENDE Group item=px_txio
+
 	}	// ENDE Frame label="Desigo PX"
 
 
@@ -590,8 +622,38 @@ sitemap ACADEMY label="Academy 4.0 - Virtuell 2"{
 			Switch item=P10_IO_NG_Adresse_4_8
 			}
 		}
-
-
+Group item=des_b {
+Group item=P01_Sim_NG_DES_B {
+		Switch item=P01_Sim_NG_Adresse_1
+		Switch item=P01_Sim_NG_Adresse_2
+		Switch item=P01_Sim_NG_Adresse_3
+		}
+	Group item=P02_Sim_NG_DES_B {
+		Switch item=P02_Sim_NG_Adresse_1
+		Switch item=P02_Sim_NG_Adresse_2
+		Switch item=P02_Sim_NG_Adresse_3
+		}
+	Group item=P04_Sim_NG_DES_B {
+		Switch item=P04_Sim_NG_Adresse_1
+		Switch item=P04_Sim_NG_Adresse_2
+		Switch item=P04_Sim_NG_Adresse_3
+	}
+	Group item=P06_Sim_NG_DES_B {
+		Switch item=P06_Sim_NG_Adresse_1
+		Switch item=P06_Sim_NG_Adresse_2
+		Switch item=P06_Sim_NG_Adresse_3
+	}
+	Group item=P08_Sim_NG_DES_B {
+		Switch item=P08_Sim_NG_Adresse_1
+		Switch item=P08_Sim_NG_Adresse_2
+		Switch item=P08_Sim_NG_Adresse_3
+	}
+	Group item=P10_Sim_NG_DES_B {
+		Switch item=P10_Sim_NG_Adresse_1
+		Switch item=P10_Sim_NG_Adresse_2
+		Switch item=P10_Sim_NG_Adresse_3
+	}
+}
 		} // ENDE Group item=ng_txio
 	} // Frame label="Desigo NGA
 

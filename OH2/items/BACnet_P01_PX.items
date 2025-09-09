@@ -1,5 +1,5 @@
 // Gruppen
-Group	P01_px_txio "TX-IOs PX Classic - Platz 01" <pxc> (px_txio)	
+Group	P01_px_txio "TX-IOs PX Classic - Platz 01" <pxc> (px_txio)
 
 //IO Adressen für PX
 // I-O Mudul 1
@@ -25,7 +25,7 @@ Number	P01_IO_PX_Adresse_2_7	"IO 2.7 Warmwasser Primäre Vorlauftemperatur [%.1f
 Number	P01_IO_PX_Adresse_2_8	"IO 2.8 Warmwasser Strategietemperatur [%.1f °C]"	<temperature> (P01_PX_Modul_2)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_2_8" }
 
 // I-O Mudul 3
-Group P01_PX_Modul_3 "TX-IO Modul 3 Binäre Eingänge" <8d> (P01_px_txio) 
+Group P01_PX_Modul_3 "TX-IO Modul 3 Binäre Eingänge" <8d> (P01_px_txio)
 Switch	P01_IO_PX_Adresse_3_1	"IO 3.1 L10 Frostschutzwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_3_1" }
 Switch	P01_IO_PX_Adresse_3_2	"IO 3.2 L10 Diff'druckwächter Abluft [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_3_2" }
 Switch	P01_IO_PX_Adresse_3_3	"IO 3.3 L10 Feuchtewächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_3_3" }
@@ -36,7 +36,7 @@ Switch	P01_IO_PX_Adresse_3_7	"IO 3.7 L20 Frostschutzwächter [MAP(Normal_Alarm.m
 Switch	P01_IO_PX_Adresse_3_8	"IO 3.8 Heizung Übertemperaturwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_3)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_3_8" }
 
 // I-O Mudul 4
-Group P01_PX_Modul_4 "TX-IO Modul 4 Binäre Eingänge" <8d> (P01_px_txio)  
+Group P01_PX_Modul_4 "TX-IO Modul 4 Binäre Eingänge" <8d> (P01_px_txio)
 Switch	P01_IO_PX_Adresse_4_1	"IO 4.1 Heizung NOT-AUS Schalter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_4_1" }
 Switch	P01_IO_PX_Adresse_4_2	"IO 4.2 Heizung Maximaldruckwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_4_2" }
 Switch	P01_IO_PX_Adresse_4_3	"IO 4.3 Heizung Wassermangelwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_4_3" }
@@ -46,3 +46,8 @@ Switch	P01_IO_PX_Adresse_4_6	"IO 4.6 MSR 24V [MAP(Normal_Alarm.map):%s]"	<alarm>
 Switch	P01_IO_PX_Adresse_4_7	"IO 4.7 MSR Hauptschalter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_4_7" }
 Switch	P01_IO_PX_Adresse_4_8	"IO 4.8 Heizung Übertemperaturwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P01_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:PX_IO_4_8" }
 
+//AI Adressen für DES-B Seminare
+Group P01_Sim_PX_DES_B "Störungen für Simulation CC-DES-B - P01" <8d> (des_b)
+Switch	P01_Sim_PX_Adresse_1	"Simulation - L01 ThOvrld [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P01_Sim_PX_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:NG_SIM_ER1" }
+Switch	P01_Sim_PX_Adresse_2	"Simulation - L04 Dstb [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P01_Sim_PX_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:NG_SIM_ER2" }
+Switch	P01_Sim_PX_Adresse_3	"Simulation - L04 ThOvrld [MAP(Normal_Alarm_Revers.map):%s]" <alarm_invers> (P01_Sim_PX_DES_B)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHPX:NG_SIM_ER3" }

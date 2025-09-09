@@ -87,4 +87,9 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP10_10OHNG "SIMP10:10OHNG" (co7io-bacnet:ip
   Type deviceWriteableNumber : NG_RS3_BLS "Jalousie Segment 3" [	readOnly="false",    instance="57",    type="ANALOG_VALUE",    refreshInterval="5000",    propertyIdentifier="present-value"  ]
   Type deviceWriteableNumber : NG_RS4_BLS "Jalousie Segment 4" [	readOnly="false",    instance="60",    type="ANALOG_VALUE",    refreshInterval="5000",    propertyIdentifier="present-value"  ]
 
+//AI Adressen für DES-B Seminare
+Type deviceWriteableBoolean : NG_SIM_ER1 "Simulation - L01 ThOvrld" [	readOnly="false",    instance="148",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+Type deviceWriteableBoolean : NG_SIM_ER2 "Simulation - L04 Dstb" [	readOnly="false",    instance="150",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+Type deviceWriteableBoolean : NG_SIM_ER3 "Simulation - L04 ThOvrld" [	readOnly="false",    instance="152",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+
 }
