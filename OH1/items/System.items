@@ -4,6 +4,7 @@ Group gen2 "PXC-Gen2" <pxc>
 Group err "DRA-Raumautomation" <pxc3>
 Group sicx "Siclimat" <sicx>
 Group hvac "S7-HVAC" <s71500>
+Group des_b "IOs für CC-DES-B " <office> // gruppe für Items CC-DES-B
 
 /* Gruppen aus Items */
 Group px_txio "TX-IOs für PX Classic ( Vertriebsbüro Nord/Süd )" <pxc> (pxc)  // gruppe für Items aus PXC
