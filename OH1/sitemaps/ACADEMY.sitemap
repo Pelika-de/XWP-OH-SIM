@@ -1556,7 +1556,38 @@ Group item=P01_Sim_NG_DES_B {
 			Switch item=P10_IO_HVAC_Adresse_4_8
 			}
 		}
-
+Group item=des_b {
+Group item=P01_DesB {
+		Switch item=P01_DesB_L01_TK1
+		Switch item=P01_DesB_L04_TK1
+		Switch item=P01_DesB_L04_TK2
+		}
+Group item=P02_DesB {
+		Switch item=P02_DesB_L01_TK1
+		Switch item=P02_DesB_L04_TK1
+		Switch item=P02_DesB_L04_TK2
+		}
+Group item=P04_DesB {
+		Switch item=P04_DesB_L01_TK1
+		Switch item=P04_DesB_L04_TK1
+		Switch item=P04_DesB_L04_TK2
+	}
+Group item=P06_DesB {
+		Switch item=P06_DesB_L01_TK1
+		Switch item=P06_DesB_L04_TK1
+		Switch item=P06_DesB_L04_TK2
+	}
+Group item=P08_DesB {
+		Switch item=P08_DesB_L01_TK1
+		Switch item=P08_DesB_L04_TK1
+		Switch item=P08_DesB_L04_TK2
+	}
+Group item=P10_DesB {
+		Switch item=P10_DesB_L01_TK1
+		Switch item=P10_DesB_L04_TK1
+		Switch item=P10_DesB_L04_TK2
+	}
+}
 		}
 	}	// Frame label="S7 - HVAC"
 
