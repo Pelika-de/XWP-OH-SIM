@@ -48,6 +48,6 @@ Switch	P10_IO_HVAC_Adresse_4_8	"IO 4.8 Heizung Übertemperaturwächter [MAP(Norm
 
 // Des-B Datenpunkte
 Group P10_DesB "DES-B Binäre Eingänge" <baugruppe> (P10_HVAC_baugr)
-Switch	P10_DesB_L01_TK1	"DES-B L01 TK Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS01:TXIO:DES_L01_TK1" }
-Switch	P10_DesB_L04_TK1	"DES-B L04 TK Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS01:TXIO:DES_L04_TK1" }
-Switch	P10_DesB_L04_TK2	"DES-B L04 Dstb Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS01:TXIO:DES_L04_TK2" }
+Switch	P10_DesB_L01_TK1	"DES-B L01 TK Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS10:TXIO:DES_L01_TK1" }
+Switch	P10_DesB_L04_TK1	"DES-B L04 TK Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS10:TXIO:DES_L04_TK1" }
+Switch	P10_DesB_L04_TK2	"DES-B L04 Dstb Störung [MAP(Normal_Alarm.map):%s]"	<alarm> (P10_DesB)	{ channel="simatic:generic_device:HVAC-AS10:TXIO:DES_L04_TK2" }
