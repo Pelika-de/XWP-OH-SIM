@@ -58,8 +58,8 @@ Thing co7io-bacnet:ip-device:BAC4:SIMP06_06OHPX "SIMP06:06OHPX" (co7io-bacnet:ip
   Type deviceWriteableBoolean : PX_IO_6_6 "TXIO Binär Ausgang" [	readOnly="false",    instance="30",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
 
 //AI Adressen für DES-B Seminare
-Type deviceWriteableBoolean : NG_SIM_ER1 "Simulation - L01 ThOvrld" [	readOnly="false",    instance="153",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-Type deviceWriteableBoolean : NG_SIM_ER2 "Simulation - L04 Dstb" [	readOnly="false",    instance="172",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
-Type deviceWriteableBoolean : NG_SIM_ER3 "Simulation - L04 ThOvrld" [	readOnly="false",    instance="174",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+Type deviceWriteableBoolean : NG_SIM_ER1 "Simulation - L01 ThOvrld" [	readOnly="false",    instance="150",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+Type deviceWriteableBoolean : NG_SIM_ER2 "Simulation - L04 Dstb" [	readOnly="false",    instance="169",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
+Type deviceWriteableBoolean : NG_SIM_ER3 "Simulation - L04 ThOvrld" [	readOnly="false",    instance="171",    type="BINARY_VALUE",    refreshInterval="0",    propertyIdentifier="present-value"  ]
 
 }
