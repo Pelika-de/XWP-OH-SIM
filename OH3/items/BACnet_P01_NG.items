@@ -41,7 +41,7 @@ Switch	P01_IO_NG_Adresse_4_1	"IO 4.1 Heizung NOT-AUS Schalter [MAP(Normal_Alarm_
 Switch	P01_IO_NG_Adresse_4_2	"IO 4.2 Nicht belegt [MAP(AUS_EIN.map):%s]"	<switch> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_2" }
 Switch	P01_IO_NG_Adresse_4_3	"IO 4.3 Nicht belegt [MAP(AUS_EIN.map):%s]" <switch> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_3" }
 Switch	P01_IO_NG_Adresse_4_4	"IO 4.4 Heizung Minimaldruckwächter [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_4" }
-Switch	P01_IO_NG_Adresse_4_5	"IO 4.5 L01 Abluftventilator TK [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers>(P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_5" }
+Switch	P01_IO_NG_Adresse_4_5	"IO 4.5 Nicht belegt [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers>(P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_5" }
 Switch	P01_IO_NG_Adresse_4_6	"IO 4.6 Heizung Gasmelder [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_6" }
 Switch	P01_IO_NG_Adresse_4_7	"IO 4.7 Nicht belegt [MAP(AUS_EIN.map):%s]"	<switch> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_7" }
 Switch	P01_IO_NG_Adresse_4_8	"IO 4.8 Heizung Sicherheitstemperatur Begrenzer [MAP(Normal_Alarm_Revers.map):%s]"	<alarm_invers> (P01_NG_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP01_01OHNG:NG_IO_4_8" }
