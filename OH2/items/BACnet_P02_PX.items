@@ -41,7 +41,7 @@ Switch	P02_IO_PX_Adresse_4_1	"IO 4.1 Heizung NOT-AUS Schalter [MAP(Normal_Alarm.
 Switch	P02_IO_PX_Adresse_4_2	"IO 4.2 Heizung Maximaldruckwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_2" }
 Switch	P02_IO_PX_Adresse_4_3	"IO 4.3 Heizung Wassermangelwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_3" }
 Switch	P02_IO_PX_Adresse_4_4	"IO 4.4 Heizung Minimaldruckwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_4" }
-Switch	P02_IO_PX_Adresse_4_5	"IO 4.5 L01 Abluftventilator TK [MAP(Normal_Alarm.map):%s]"	<alarm>(P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_5" }
+Switch	P02_IO_PX_Adresse_4_5	"IO 4.5 Nicht belegt [MAP(Normal_Alarm.map):%s]"	<alarm>(P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_5" }
 Switch	P02_IO_PX_Adresse_4_6	"IO 4.6 MSR 24V [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_6" }
 Switch	P02_IO_PX_Adresse_4_7	"IO 4.7 MSR Hauptschalter [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_7" }
 Switch	P02_IO_PX_Adresse_4_8	"IO 4.8 Heizung Übertemperaturwächter [MAP(Normal_Alarm.map):%s]"	<alarm> (P02_PX_Modul_4)	{ channel="co7io-bacnet:ip-device:BAC4:SIMP02_02OHPX:PX_IO_4_8" }
